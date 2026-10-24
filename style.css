@@ -1,0 +1,5318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* 1. Hero Container Wrapper */
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/* 
+.hero-bg-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ */
+
+
+/* 3. Logo Styles */
+.navbar-brand {
+    text-decoration: none;
+    padding: 0;
+}
+/* 
+.navbar-logo {
+    height: 80px;
+    width: 100px;
+    object-fit: contain; */
+
+    /* filter: brightness(0) invert(1); */
+     /* Image icon ko white kar deta hai taake dark image par dikhe */
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-title {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+}
+
+.brand-subtitle {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #00d2ff; /* Cyan Highlight */
+    letter-spacing: 1.2px;
+}
+
+.my-custom-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 6px 12px !important;
+    margin: 0 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.my-custom-nav .nav-link:hover,
+.my-custom-nav .nav-link.active {
+    color: red!important;
+    
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.6);
+}
+
+/* 5. Visitor Count Text */
+.visitor-count {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Mobile responsive menu background */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(10, 18, 32, 0.95);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
+
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.my-custom-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: rgba(85, 161, 223, 0.35) !important;
+    backdrop-filter: blur(6px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+    margin-top: 0;
+
+    transition: all 0.4s ease;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+/* 
+.logo-text {
+    display: flex;
+    flex-direction: column;
+} */
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.my-custom-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 6px;
+}
+
+.my-custom-nav .nav-link:hover {
+    color: #dbeeff;
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: #e8f1f8;
+}
+
+
+/* =========================
+   VISITOR COUNT
+========================= */
+
+.visitor-count {
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+}
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hero Text */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    color: white;
+}
+
+/* Paragraph */
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* HERO HEADING */
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* PEAK RED COLOR */
+.hero-content h1 span {
+    color: #d62828;
+}
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* FIRST BUTTON */
+.hero-btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: white;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+
+/* SECOND BUTTON */
+.hero-btn-outline {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+/* FIRST BUTTON HOVER */
+.hero-btn:hover {
+    background-color: #5dade2;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* SECOND BUTTON HOVER */
+.hero-btn-outline:hover {
+    background-color: #5dade2;
+    color: white;
+    border-color: #5dade2;
+    transform: translateY(-3px);
+}
+
+
+.mountain-card h4 {
+    margin-bottom: 12px;
+    color: #173b57;
+}
+
+.mountain-type-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.mountain-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+    .mountain-card {
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f3f7f9;
+    transition: 0.3s ease;
+}
+
+.mountain-safety h3 {
+    background-color: #d65a5a;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.mountain-safety {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #f3f7f9;
+    border-radius: 12px;
+}
+
+/* LEFT IMAGE */
+
+.safety-image {
+    width: 35%;
+}
+
+.safety-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* RIGHT CONTENT */
+
+.safety-content {
+    width: 65%;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background-color: #5aa9d6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #3d8fbd;
+    transform: translateY(-2px);
+}
+#mountaineeringModal .modal-content {
+    /* background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("myimg/1647536477-mountaineering-ruth-2.webp"); */
+        background-image: linear-gradient(
+               rgb(8, 8, 8),
+            rgba(10, 35, 173, 0.55)
+        );
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Header transparent */
+#mountaineeringModal .modal-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(184, 11, 11, 0.3);
+}
+
+/* Body transparent */
+#mountaineeringModal .modal-body {
+    background: transparent;
+}
+
+/* Footer transparent */
+#mountaineeringModal .modal-footer {
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Text white */
+#mountaineeringModal h2,
+#mountaineeringModal h3,
+#mountaineeringModal h4,
+#mountaineeringModal p {
+    color: white;
+}
+
+/* Close button white */
+#mountaineeringModal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Cards ko transparent rakhein taake background image nazar aaye */
+#mountaineeringModal .mountain-card {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Safety section bhi transparent */
+#mountaineeringModal .mountain-safety {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+/* From Uiverse.io by Codecite */ 
+.btn {
+  --fancy-button-gradient-0: #8d49fd;
+  --fancy-button-gradient-50: #7f56f3;
+  --fancy-button-gradient-100: #5691f3;
+  --fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
+  --fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
+  --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
+  --fancy-button-shine-top: #e9d1ff;
+  --fancy-button-shine-bottom: #adfff9;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 25px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-gradient-0) 0%,
+    var(--fancy-button-gradient-50) 50%,
+    var(--fancy-button-gradient-100) 100%
+  );
+  box-shadow:
+    0px 4px 12px rgba(9, 12, 60, 0.15),
+    0px 2px 8px rgba(9, 12, 60, 0.15),
+    0px 1px 3px var(--fancy-button-inner-shadow-top-lg),
+    inset 0px 1px 1px var(--fancy-button-inner-shadow-top),
+    inset 0px -1px 3px var(--fancy-button-inner-shadow-bottom);
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  will-change: transform;
+}
+
+.btn:before {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--fancy-button-shine-top);
+  width: 96px;
+  height: 6px;
+  top: -3px;
+  opacity: 0.6;
+  filter: blur(6px);
+  transition: opacity 0.25s;
+}
+
+.btn:after {
+  inset: 0;
+  background-size: cover;
+  z-index: 2;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+  border-radius: inherit;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-shine-top),
+    transparent 8px
+  );
+  background-position: 0 -6px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.btn span:before,
+.btn span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: var(--fancy-button-shine-bottom);
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+  will-change: transform;
+}
+
+.btn span:before {
+  width: 92px;
+  height: 8px;
+  bottom: -4px;
+  opacity: 0.75;
+  filter: blur(6px);
+}
+
+.btn span:after {
+  width: 112px;
+  height: 1px;
+  bottom: 0;
+  opacity: 0.9;
+  filter: blur(1px);
+}
+
+
+.btn:hover span:before {
+  transform: translateX(-50%) scale(1.25);
+    opacity: 0.8;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+}
+/* =========================
+   MODAL MAIN HEADING
+========================= */
+
+.modal-header {
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(135deg, #0b1f2a, #163f4d);
+    border-bottom: none;
+    padding: 28px 20px;
+    overflow: hidden;
+}
+
+/* Mountain-style decorative glow */
+.modal-header::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    top: -100px;
+    left: -50px;
+}
+
+.modal-header::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -50px;
+}
+
+/* Main Heading */
+.modal-title {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Golden underline */
+.modal-title::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        #d6a84f,
+        #f5d58a,
+        #d6a84f
+    );
+    box-shadow: 0 0 10px rgba(214, 168, 79, 0.5);
+}
+/* =========================
+   EXPEDITIONS MODAL CARDS
+========================= */
+
+.expedition-card {
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.expedition-card h4 {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.expedition-img {
+    width: 110% !important;
+    height: 200px !important;
+    object-fit: cover;
+    display: block;
+    margin-left: -5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.expedition-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Expedition Modal ke planning section wali image ki width zyada karne ke liye */
+.expedition-planning .planning-image img {
+    width:500px;       /* Ya aap apne hisab se percentage/px set kar sakte hain, e.g., 80% ya 500px */
+    max-width: 500px;   /* Ensure karega ki image modal se bahar na nikle */
+    height: auto;      /* Aspect ratio barqarar rakhne ke liye */
+    display: block;
+    margin: 0 auto;    /* Centered rakhne ke liye */
+}
+
+/* ADVANCED EXPEDITION CARD HOVER */
+
+.expedition-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.expedition-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.expedition-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(86, 145, 243, 0.25);
+}
+
+.expedition-card:hover::before {
+    left: 130%;
+}
+/* PLAN YOUR EXPEDITION IMAGE */
+
+.planning-image img {
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.planning-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+/* =========================
+   MOUNTAINEERING CARD ADVANCED HOVER
+========================= */
+
+#mountaineeringModal .mountain-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#mountaineeringModal .mountain-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#mountaineeringModal .mountain-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(86, 145, 243, 0.25);
+}
+
+#mountaineeringModal .mountain-card:hover::before {
+    left: 130%;
+}
+
+/* =========================
+   MOUNTAINEERING HEADINGS
+========================= */
+
+#mountaineeringModal .mountain-intro h3,
+#mountaineeringModal .modal-section-title {
+    position: relative;
+    display: inline-block;
+    color: #bfefff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-shadow:
+        0 0 8px rgba(80, 210, 255, 0.5),
+        0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Icy blue underline */
+#mountaineeringModal .mountain-intro h3::after,
+#mountaineeringModal .modal-section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #4fc3f7,
+        #bfefff,
+        #4fc3f7
+    );
+
+    box-shadow: 0 0 12px rgba(79, 195, 247, 0.7);
+
+    transition: width 0.4s ease;
+}
+
+/* Hover effect */
+#mountaineeringModal .mountain-intro h3:hover::after,
+#mountaineeringModal .modal-section-title:hover::after {
+    width: 130px;
+}
+
+/* =========================
+   EXPEDITIONS MODAL HEADINGS
+========================= */
+
+#expeditionsModal .expedition-intro h3,
+#expeditionsModal .expedition-section-title,
+#expeditionsModal .expedition-planning h3 {
+    position: relative;
+    display: inline-block;
+    color: #bfefff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-shadow:
+        0 0 8px rgba(80, 210, 255, 0.5),
+        0 4px 12/* SECOND SECTION IMAGE */
+px rgba(0, 0, 0, 0.5);
+}
+
+/* Icy Blue Underline */
+
+#expeditionsModal .expedition-intro h3::after,
+#expeditionsModal .expedition-section-title::after,
+#expeditionsModal .expedition-planning h3::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #4fc3f7,
+        #bfefff,
+        #4fc3f7
+    );
+
+    box-shadow: 0 0 12px rgba(79, 195, 247, 0.7);
+
+    transition: width 0.4s ease;
+}
+
+/* Hover Effect */
+
+#expeditionsModal .expedition-intro h3:hover::after,
+#expeditionsModal .expedition-section-title:hover::after,
+#expeditionsModal .expedition-planning h3:hover::after {
+    width: 130px;
+}
+
+/* =========================
+   EXPEDITIONS MODAL BACKGROUND
+========================= */
+
+#expeditionsModal .modal-content {
+    background-image: linear-gradient(
+        rgb(8, 8, 8),
+        rgba(10, 35, 173, 0.55)
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#expeditionsModal .modal-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#expeditionsModal .modal-body {
+    background: transparent;
+}
+
+#expeditionsModal .modal-footer {
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#expeditionsModal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   MAIN MODAL HEADING LINE HOVER
+========================= */
+
+#mountaineeringModal .modal-title::after,
+#expeditionsModal .modal-title::after {
+    transition: width 0.5s ease;
+}
+
+/* Hover on main heading */
+#mountaineeringModal .modal-title:hover::after,
+#expeditionsModal .modal-title:hover::after {
+    width: 150px;
+}
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    min-height: 600px;
+
+    background-color: #0f2433;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 8%;
+
+    overflow: hidden;
+}
+
+
+/* LEFT SIDE */
+
+.about-hero-content {
+    width: 48%;
+}
+
+.about-hero-content span {
+    color: #d8ff3e;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+}
+
+.about-hero-content h1 {
+    color: white;
+
+    font-size: 60px;
+
+    font-weight: bold;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.about-hero-content p {
+    color: #c4cdd2;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 550px;
+}
+
+
+/* =========================
+   RIGHT SIDE IMAGE
+========================= */
+
+.about-hero-image {
+    width: 45%;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 2px solid rgba(216, 255, 62, 0.3);
+
+    position: relative;
+
+    transition: 0.4s ease;
+}
+
+
+/* IMAGE */
+
+.about-hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.6s ease;
+}
+
+
+/* DARK OVERLAY */
+
+.about-hero-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.15);
+
+    transition: 0.4s ease;
+}
+
+
+/* HOVER */
+
+.about-hero-image:hover {
+    border-color: #d8ff3e;
+
+    box-shadow:
+        0 0 20px rgba(216, 255, 62, 0.25),
+        0 20px 45px rgba(0, 0, 0, 0.5);
+
+    transform: translateY(-8px);
+}
+
+.about-hero-image:hover img {
+    transform: scale(1.08);
+}
+
+.about-hero-image:hover::after {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        flex-direction: column;
+
+        padding: 70px 6%;
+    }
+
+    .about-hero-content {
+        width: 100%;
+    }
+
+    .about-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .about-hero-image {
+        width: 100%;
+
+        height: 350px;
+    }
+
+}
+/* =========================
+   WHO WE ARE
+========================= */
+
+.who-we-are {
+    background-color: #0f2433;
+    padding: 100px 0;
+}
+
+/* =========================
+   WHO WE ARE IMAGE
+========================= */
+
+.about-image {
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    border: 2px solid rgba(216, 255, 62, 0.3);
+
+    position: relative;
+
+    transition: 0.4s ease;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.6s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.about-image:hover {
+    border-color: #d8ff3e;
+
+    box-shadow:
+        0 0 20px rgba(216, 255, 62, 0.25),
+        0 20px 45px rgba(0, 0, 0, 0.5);
+
+    transform: translateY(-8px);
+}
+
+.about-image:hover img {
+    transform: scale(1.08);
+}
+
+.about-image:hover::after {
+    background: rgba(0, 0, 0, 0.05);
+}
+/* DARK OVERLAY */
+
+.about-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease;
+}
+
+/* HOVER */
+
+.about-image:hover {
+    border-color: #d8ff3e;
+
+    box-shadow:
+        0 0 20px rgba(216, 255, 62, 0.25),
+        0 20px 45px rgba(0, 0, 0, 0.5);
+
+    transform: translateY(-8px);
+}
+
+.about-image:hover img {
+    transform: scale(1.08);
+}
+
+.about-image:hover::after {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.small-title {
+    color: #d8ff3e;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 42px;
+    margin: 15px 0 25px;
+}
+
+.about-text p {
+    color: #bfc7cc;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+
+/* BUTTON */
+
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background-color: #d8ff3e;
+    color: #0f2433;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: white;
+    color: #0f2433;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading span {
+    color: #d8ff3e;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.section-heading h2 {
+    color: white;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #aaa;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   OUR MOUNTAINS
+========================= */
+
+.our-mountains {
+    background-color: #0f2433;
+    padding: 100px 0;
+}
+
+.mountain-card {
+    background-color: #091923;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(216, 255, 62, 0.15);
+
+    transition: 0.4s ease;
+}
+
+.mountain-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #d8ff3e;
+}
+
+.mountain-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.mountain-card:hover img {
+    transform: scale(1.05);
+}
+
+.mountain-content {
+    padding: 30px;
+}
+
+.mountain-content span {
+    color: #d8ff3e;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.mountain-content h3 {
+    color: white;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.mountain-content p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.mountain-content button {
+    background: transparent;
+
+    color: #d8ff3e;
+
+    border: 1px solid #d8ff3e;
+
+    padding: 10px 18px;
+
+    transition: 0.3s ease;
+}
+
+.mountain-content button:hover {
+    background-color: #d8ff3e;
+    color: #091923;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    background-color: #091923;
+    padding: 100px 0;
+}
+
+.why-box {
+    padding: 30px;
+
+    border-left: 2px solid #d8ff3e;
+}
+
+.why-box h3 {
+    color: #d8ff3e;
+    font-size: 20px;
+}
+
+.why-box h4 {
+    color: white;
+    margin: 10px 0;
+}
+
+.why-box p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .about-text h2 {
+        font-size: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* =========================================================
+   MOUNTAINEERING TECHNIQUES SECTION
+   UNIQUE CLASSES - NO CONFLICT WITH OTHER SECTIONS
+========================================================= */
+
+.alpine-techniques {
+    background: #092624;
+    color: #edf4ef;
+    padding: 90px 7%;
+    overflow: hidden;
+}
+
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.alpine-techniques-header {
+    max-width: 850px;
+    margin: 0 auto 65px;
+}
+
+.alpine-techniques-label {
+    display: block;
+    color: #7bb8a6;
+    letter-spacing: 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.alpine-techniques-header h2 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 0.95;
+    color: #edf4ef;
+}
+
+.alpine-techniques-header h2 span {
+    color: #70b39f;
+}
+
+.alpine-techniques-header p {
+    max-width: 650px;
+    margin-top: 25px;
+    color: #9bb9b1;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CARDS GRID
+========================= */
+
+.alpine-techniques-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   TECHNIQUE CARD
+========================= */
+
+.alpine-technique-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 440px;
+    border-radius: 28px;
+    background: #123a36;
+    border: 1px solid rgba(132, 190, 175, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+}
+
+
+/* Different card sizes */
+
+.alpine-technique-card:nth-child(1) {
+    grid-column: span 7;
+    min-height: 480px;
+}
+
+.alpine-technique-card:nth-child(2) {
+    grid-column: span 5;
+    min-height: 480px;
+}
+
+.alpine-technique-card:nth-child(3) {
+    grid-column: span 4;
+}
+
+.alpine-technique-card:nth-child(4) {
+    grid-column: span 8;
+    min-height: 450px;
+}
+
+.alpine-technique-card:nth-child(5) {
+    grid-column: span 5;
+}
+
+.alpine-technique-card:nth-child(6) {
+    grid-column: span 7;
+    min-height: 450px;
+}
+
+.alpine-technique-card:nth-child(7) {
+    grid-column: span 7;
+}
+
+.alpine-technique-card:nth-child(8) {
+    grid-column: span 5;
+}
+
+.alpine-technique-card:nth-child(9) {
+    grid-column: span 12;
+    min-height: 340px;
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.alpine-technique-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.7s ease;
+}
+
+
+/* Dark overlay */
+
+.alpine-technique-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5, 27, 26, 0.98) 5%,
+            rgba(5, 27, 26, 0.82) 38%,
+            rgba(5, 27, 26, 0.18) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.alpine-technique-content {
+    position: absolute;
+    inset: 0;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    z-index: 2;
+}
+
+
+/* Number */
+
+.alpine-technique-number {
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    padding: 8px 13px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    color: #dcece5;
+
+    background: rgba(7, 35, 33, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* Icon */
+
+.alpine-technique-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #79b8a5;
+    color: #092b28;
+
+    border-radius: 15px;
+
+    font-size: 21px;
+
+    margin-bottom: 16px;
+
+    transition: 0.4s ease;
+}
+
+
+/* Heading */
+
+.alpine-technique-content h3 {
+    margin: 0 0 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 29px;
+
+    color: #ffffff;
+}
+
+
+/* Paragraph */
+
+.alpine-technique-content p {
+    max-width: 580px;
+
+    color: #c0d2cb;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.alpine-technique-button {
+    width: fit-content;
+
+    padding: 11px 19px;
+
+    border: 1px solid rgba(137, 195, 180, 0.35);
+
+    border-radius: 50px;
+
+    background: rgba(111, 174, 157, 0.14);
+
+    color: #dcece6;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.alpine-technique-button:hover {
+    background: #78b7a4;
+    color: #082724;
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.alpine-technique-card:hover {
+    transform: translateY(-12px);
+
+    border-color: rgba(113, 185, 163, 0.35);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(113, 185, 163, 0.1);
+}
+
+.alpine-technique-card:hover .alpine-technique-image {
+    transform: scale(1.08);
+    filter: saturate(1.12);
+}
+
+.alpine-technique-card:hover .alpine-technique-icon {
+    transform: rotate(-7deg) scale(1.1);
+    background: #a0d0c0;
+}
+
+
+/* =========================
+   LAST / WIDE CARD
+========================= */
+
+.alpine-technique-wide .alpine-technique-content {
+    padding-left: 45%;
+    justify-content: center;
+}
+
+.alpine-technique-wide .alpine-technique-content p {
+    max-width: 650px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.alpine-technique-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background: rgba(3, 18, 17, 0.82);
+
+    backdrop-filter: blur(12px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.35s ease;
+
+    z-index: 10000;
+}
+
+.alpine-technique-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Modal box */
+
+.alpine-technique-modal-box {
+    position: relative;
+
+    width: min(950px, 100%);
+
+    max-height: 90vh;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 28px;
+
+    background: #123a36;
+
+    border: 1px solid rgba(139, 199, 184, 0.2);
+
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+
+    transform: scale(0.9) translateY(30px);
+
+    transition: 0.4s ease;
+}
+
+.alpine-technique-modal.active .alpine-technique-modal-box {
+    transform: scale(1) translateY(0);
+}
+
+
+/* Modal image */
+
+.alpine-technique-modal-image {
+    min-height: 500px;
+}
+
+.alpine-technique-modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Modal content */
+
+.alpine-technique-modal-content {
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alpine-technique-modal-label {
+    color: #79b8a5;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+.alpine-technique-modal-content h2 {
+    margin: 0 0 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    color: #f2f7f3;
+}
+
+.alpine-technique-modal-content p {
+    color: #b7cbc4;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.alpine-technique-close {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(7, 31, 29, 0.8);
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s ease;
+}
+
+.alpine-technique-close:hover {
+    background: #78b7a4;
+
+    color: #092624;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .alpine-techniques-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .alpine-technique-card,
+    .alpine-technique-card:nth-child(n) {
+        grid-column: span 1;
+        min-height: 400px;
+    }
+
+    .alpine-technique-wide .alpine-technique-content {
+        padding-left: 30px;
+        justify-content: flex-end;
+    }
+
+    .alpine-technique-modal-box {
+        grid-template-columns: 1fr;
+
+        max-height: 90vh;
+
+        overflow-y: auto;
+    }
+
+    .alpine-technique-modal-image {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .alpine-technique-modal-content {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .alpine-techniques {
+        padding: 60px 5%;
+    }
+
+    .alpine-techniques-grid {
+        display: block;
+    }
+
+    .alpine-technique-card {
+        margin-bottom: 22px;
+        min-height: 420px !important;
+    }
+
+    .alpine-techniques-header {
+        margin-bottom: 45px;
+    }
+
+    .alpine-technique-modal-content h2 {
+        font-size: 32px;
+    }
+}
+/* =========================
+   TYPES / STYLES SECTION
+========================= */
+
+.mountain-types-section {
+    padding: 90px 7%;
+    background:
+        linear-gradient(
+            rgba(8, 27, 39, 0.96),
+            rgba(15, 48, 65, 0.98)
+        );
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.types-heading {
+    max-width: 820px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.types-heading h2 {
+    display: inline-block;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+
+    position: relative;
+}
+
+
+/* BLUE LINE UNDER HEADING */
+
+.types-heading h2::after {
+    content: "";
+
+    display: block;
+
+    width: 110px;
+    height: 4px;
+
+    margin: 15px auto 0;
+
+    background: #5aa9d6;
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+
+/* HEADING HOVER */
+
+.types-heading h2:hover::after {
+    width: 180px;
+}
+
+
+/* DESCRIPTION */
+
+.types-heading p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #c9e3ed;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.types-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================
+   TYPE CARD
+========================= */
+
+.type-card {
+    position: relative;
+
+    height: 430px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #173f52;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.35);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* CARD HOVER */
+
+.type-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.type-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.type-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* IMAGE ZOOM */
+
+.type-card:hover .type-image img {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   IMAGE DARK GRADIENT
+========================= */
+
+.type-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5, 20, 30, 0.98),
+            rgba(5, 20, 30, 0.55),
+            rgba(5, 20, 30, 0.05)
+        );
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.type-content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 30px 25px;
+
+    z-index: 2;
+}
+
+
+/* CARD TITLE */
+
+.type-content h3 {
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.type-content p {
+    color: #e4f3f8;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   READ MORE BUTTON
+========================= */
+
+.type-btn {
+    display: inline-block;
+
+    padding: 9px 23px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    border-radius: 25px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    background: rgba(255,255,255,0.10);
+
+    backdrop-filter: blur(5px);
+
+    transition: all 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.type-btn:hover {
+    background: #5aa9d6;
+
+    border-color: #5aa9d6;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .types-container {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .type-card {
+        height: 400px;
+    }
+
+    .types-heading h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-page-section {
+    background: #f4f9fc;
+    padding-bottom: 80px;
+}
+
+
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contact-page-hero {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 36, 51, 0.55),
+            rgba(15, 36, 51, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b")
+        center / cover;
+}
+
+.contact-page-hero h2 {
+    color: white;
+
+    font-size: 55px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.contact-page-hero p {
+    color: #eaf7fc;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   CONTACT CONTAINER
+========================= */
+
+.contact-page-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.3fr;
+
+    gap: 35px;
+}
+
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border: 1px solid #dceff7;
+
+    box-shadow:
+        0 8px 25px rgba(45, 127, 163, 0.10);
+}
+
+.contact-info-card h2 {
+    color: #2d7fa3;
+
+    margin-bottom: 15px;
+}
+
+.contact-info-card > p {
+    color: #58717d;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* INFO ITEM */
+
+.contact-info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 22px 0;
+}
+
+
+/* ICON */
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    background: #dceff7;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.contact-info-item h4 {
+    color: #173f52;
+
+    margin-bottom: 4px;
+}
+
+.contact-info-item span {
+    color: #6b858f;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border: 1px solid #dceff7;
+
+    box-shadow:
+        0 8px 25px rgba(45, 127, 163, 0.10);
+}
+
+.contact-form-card h2 {
+    color: #2d7fa3;
+
+    margin-bottom: 25px;
+}
+
+
+/* INPUT GROUP */
+
+.contact-input-group {
+    margin-bottom: 18px;
+}
+
+.contact-input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    color: #29424d;
+}
+
+
+/* INPUTS */
+
+.contact-input-group input,
+.contact-input-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    border: 1px solid #bfdce8;
+
+    outline: none;
+
+    background: #f8fcfe;
+
+    color: #29424d;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.contact-input-group input:focus,
+.contact-input-group textarea:focus {
+    border-color: #2d7fa3;
+
+    box-shadow:
+        0 0 0 3px rgba(45, 127, 163, 0.10);
+}
+
+
+/* TEXTAREA */
+
+.contact-input-group textarea {
+    height: 130px;
+
+    resize: none;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.contact-error {
+    display: block;
+
+    color: #d9534f;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contact-submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2d7fa3;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background: #173f52;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.contact-success {
+    display: none;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #e2f4ea;
+
+    color: #287a4b;
+
+    text-align: center;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .contact-page-hero {
+        min-height: 250px;
+
+        padding: 40px 20px;
+    }
+
+    .contact-page-hero h2 {
+        font-size: 40px;
+    }
+
+    .contact-page-hero p {
+        font-size: 15px;
+    }
+
+    .contact-page-container {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+
+        margin-top: 40px;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        padding: 25px;
+    }
+
+}
+@media (min-width: 992px) {
+    .my-custom-nav .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: nowrap;
+    }
+
+    .my-custom-nav .nav-link {
+        padding: 6px 0 !important;
+        white-space: nowrap;
+    }
+}
+.mountain-page {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f5;
+    color: #263238;
+    line-height: 1.7;
+}
+
+ .mountain-page header {
+    background: linear-gradient(rgba(5, 19, 112, 0.8), rgba(33, 30, 184, 0.8)),
+                url("mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+ .mountain-page header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+ .mountain-page header p {
+    font-size: 18px;
+}
+
+ .mountain-page main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+ .mountain-page .hazard {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-left: 6px solid #176b87;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ .mountain-page .hazard h2 {
+    color: #0b5369;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.mountain-page .hazard h3 {
+    color: #176b87;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+ .mountain-page .hazard p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mountain-page .hazard ul {
+    padding-left: 25px;
+}
+
+.mountain-page .hazard li {
+    margin-bottom: 5px;
+}
+
+ .mountain-page .last { 
+    background-color: #073642;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.mountaineering-shelter {
+    background: #071b2b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    /* padding: 30px 15px; */
+    padding: 100px 15px 30px;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.mountaineering-shelter h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+
+.mountaineering-shelter .subtitle {
+    color: #a9c5d8;
+    font-size: 18px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.mountaineering-shelter .container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 15px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.mountaineering-shelter .shelter-card {
+    width: 100%;
+    min-height: 500px;
+    padding: 25px;
+    background: #123752;
+    box-shadow: 0 10px 25px #0008;
+    transition: 0.4s;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.mountaineering-shelter .shelter-card:hover {
+    transform: translateY(-15px);
+    background: #205574;
+}
+
+
+/* =========================
+   PICTURE
+========================= */
+
+.mountaineering-shelter .picture {
+    width: 100%;
+    height: 300px;
+    background: #1b4965;
+    border: 2px dashed #7da5bd;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.mountaineering-shelter .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.mountaineering-shelter .icon {
+    font-size: 45px;
+    margin: 10px;
+}
+
+
+/* =========================
+   DIFFERENT CARD SHAPES
+========================= */
+
+.mountaineering-shelter .card-one {
+    border-radius: 45px 10px 45px 10px;
+}
+
+
+.mountaineering-shelter .card-two {
+    border-radius: 10px 50px 10px 50px;
+}
+
+
+.mountaineering-shelter .card-three {
+    clip-path: polygon(
+        12% 0%,
+        88% 0%,
+        100% 18%,
+        92% 100%,
+        8% 100%,
+        0% 18%
+    );
+}
+
+
+.mountaineering-shelter .card-four {
+    border-radius: 50% 15% 50% 15%;
+}
+
+
+/* =========================
+   PICTURE SHAPES
+========================= */
+
+.mountaineering-shelter .card-one .picture {
+    border-radius: 30px 8px 30px 8px;
+}
+
+
+.mountaineering-shelter .card-two .picture {
+    border-radius: 8px 35px 8px 35px;
+}
+
+
+.mountaineering-shelter .card-four .picture {
+    border-radius: 50% 15% 50% 15%;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.mountaineering-shelter .shelter-card h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+
+.mountaineering-shelter .shelter-card p {
+    line-height: 1.7;
+    color: #d4e5ef;
+    font-size: 15px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .mountaineering-shelter {
+        padding: 20px 10px;
+    }
+
+
+    .mountaineering-shelter h1 {
+        font-size: 28px;
+    }
+
+
+    .mountaineering-shelter .subtitle {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    .mountaineering-shelter .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 5px;
+        box-sizing: border-box;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .mountaineering-shelter .row {
+        width: 100%;
+    }
+
+
+    .mountaineering-shelter .row > .col-12 {
+        width: 100%;
+    }
+
+
+    /* CARD */
+
+    .mountaineering-shelter .shelter-card {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+
+    /* PICTURE */
+
+    .mountaineering-shelter .picture {
+        width: 100%;
+        height: 190px;
+    }
+
+
+    .mountaineering-shelter .picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* ICON */
+
+    .mountaineering-shelter .icon {
+        font-size: 40px;
+    }
+
+
+    /* HEADING */
+
+    .mountaineering-shelter .shelter-card h2 {
+        font-size: 22px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .mountaineering-shelter .shelter-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* CARD SHAPES */
+
+    .mountaineering-shelter .card-one {
+        border-radius: 35px 10px 35px 10px;
+    }
+
+
+    .mountaineering-shelter .card-two {
+        border-radius: 10px 35px 10px 35px;
+    }
+
+
+    .mountaineering-shelter .card-three {
+        clip-path: none;
+        border-radius: 35px 10px 35px 10px;
+    }
+
+
+    .mountaineering-shelter .card-four {
+        border-radius: 35px 10px 35px 10px;
+    }
+
+
+    /* PICTURE SHAPES */
+
+    .mountaineering-shelter .card-one .picture {
+        border-radius: 25px 7px 25px 7px;
+    }
+
+
+    .mountaineering-shelter .card-two .picture {
+        border-radius: 7px 30px 7px 30px;
+    }
+
+
+    .mountaineering-shelter .card-four .picture {
+        border-radius: 30px 8px 30px 8px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .mountaineering-shelter {
+        padding: 15px 8px;
+    }
+
+
+    .mountaineering-shelter h1 {
+        font-size: 25px;
+    }
+
+
+    .mountaineering-shelter .container {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+
+    .mountaineering-shelter .shelter-card {
+        padding: 18px;
+    }
+
+
+    .mountaineering-shelter .picture {
+        height: 170px;
+    }
+
+
+    .mountaineering-shelter .icon {
+        font-size: 36px;
+    }
+
+
+    .mountaineering-shelter .shelter-card h2 {
+        font-size: 20px;
+    }
+
+
+    .mountaineering-shelter .shelter-card p {
+        font-size: 13px;
+    }
+
+}
+/* PAGE */
+
+.history {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #080f16;
+    color: white;
+    padding-top: 90px;
+}
+
+
+/* MAIN HEADING */
+
+.history .main-heading {
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+.history .main-heading h1 {
+    margin: 0;
+    color: #a9e8f5;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+.history .main-heading p {
+    color: #9aabb3;
+    margin-top: 8px;
+}
+
+
+/* CARDS */
+
+.history .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 35px 20px 50px;
+}
+
+
+/* CARD */
+
+.history .card {
+    width: 290px;
+    background-color: #101b24;
+    border: 1px solid #29404d;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+/* CARD HOVER */
+
+.history .card:hover {
+    transform: translateY(-8px);
+    border-color: #6bd4e8;
+    box-shadow: 0 10px 25px rgba(60, 180, 210, 0.18);
+}
+
+
+/* IMAGE */
+
+.history .image {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    background-color: #172630;
+}
+
+.history .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.history .content {
+    padding: 20px;
+}
+
+.history .content h2 {
+    color: #9eeaff;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.history .content p {
+    color: #c0ccd1;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/* BUTTON */
+
+.history button {
+    background-color: #172c38;
+    color: #a9e8f5;
+    border: 1px solid #65cde8;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* ARROW ICON */
+
+.history button span {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+/* BUTTON HOVER */
+
+.history button:hover {
+    background-color: #65cde8;
+    color: #071018;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(101, 205, 232, 0.25);
+}
+
+
+/* BUTTON CLICK */
+
+.history button:active {
+    transform: translateY(0);
+}
+/* MOUNTAINEERING GALLERY */
+
+.mountaineering-gallery {
+    background-color: #080f16;
+    color: white;
+    padding: 90px 30px 60px;
+}
+
+
+/* GALLERY HEADING */
+
+.mountaineering-gallery .gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mountaineering-gallery .gallery-heading h1 {
+    color: #a9e8f5;
+    font-size: 40px;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
+
+.mountaineering-gallery .gallery-heading p {
+    color: #9aabb3;
+    font-size: 17px;
+    margin: 0;
+}
+
+
+/* IMAGE GRID */
+
+.mountaineering-gallery .gallery-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* GALLERY ITEM */
+
+.mountaineering-gallery .gallery-item {
+    height: 230px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #29404d;
+    background-color: #101b24;
+    transition: 0.3s;
+}
+
+
+/* IMAGE */
+
+.mountaineering-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+
+/* HOVER */
+
+.mountaineering-gallery .gallery-item:hover {
+    transform: translateY(-6px);
+    border-color: #65cde8;
+    box-shadow: 0 10px 25px rgba(60, 180, 210, 0.20);
+}
+
+.mountaineering-gallery .gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .mountaineering-gallery .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .mountaineering-gallery {
+        padding: 80px 15px 40px;
+    }
+
+    .mountaineering-gallery .gallery-heading h1 {
+        font-size: 30px;
+    }
+
+    .mountaineering-gallery .gallery-heading p {
+        font-size: 15px;
+    }
+
+    .mountaineering-gallery .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .mountaineering-gallery .gallery-item {
+        height: 220px;
+    }
+
+}
+
+
+/* =====================================
+   ORGANIZATIONS / CLUBS SECTION
+   All styles are scoped to orgclub-
+===================================== */
+
+.orgclub-section {
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #071b2b, #0c2938);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.orgclub-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.orgclub-heading {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.orgclub-subtitle {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #d8ff3e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.orgclub-heading h2 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 43px);
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.orgclub-heading h2 span {
+    color: #d8ff3e;
+}
+
+.orgclub-heading > p {
+    margin: 0;
+    color: #c7d6df;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.orgclub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.orgclub-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #0a2231;
+    border: 1px solid rgba(216, 255, 62, 0.22);
+    border-radius: 16px;
+    transition: transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.orgclub-card:hover {
+    transform: translateY(-9px);
+    border-color: #d8ff3e;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.3);
+}
+
+.orgclub-image {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.orgclub-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.orgclub-card:hover .orgclub-image img {
+    transform: scale(1.08);
+}
+
+.orgclub-number {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #071b2b;
+    background: #d8ff3e;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.orgclub-content {
+    padding: 25px;
+}
+
+.orgclub-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #d8ff3e;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.orgclub-content h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.orgclub-location {
+    margin: 0 0 15px;
+    color: #d8ff3e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.orgclub-description {
+    margin: 0 0 22px;
+    color: #c7d6df;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.orgclub-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 11px 20px;
+    border: 1px solid #d8ff3e;
+    border-radius: 30px;
+    background: #d8ff3e;
+    color: #071b2b;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.orgclub-btn:hover {
+    background: transparent;
+    color: #d8ff3e;
+    transform: translateX(3px);
+}
+
+.orgclub-btn span {
+    font-size: 18px;
+}
+
+/* DETAILS MODAL */
+
+.orgclub-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.78);
+    overflow-y: auto;
+}
+
+.orgclub-modal.orgclub-modal-active {
+    display: flex;
+}
+
+.orgclub-modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 35px;
+    background: #0a2231;
+    color: #ffffff;
+    border: 1px solid rgba(216, 255, 62, 0.5);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.orgclub-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: #193747;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.orgclub-close:hover {
+    background: #d8ff3e;
+    color: #071b2b;
+}
+
+.orgclub-modal-box h2 {
+    margin: 10px 35px 10px 0;
+    color: #d8ff3e;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.orgclub-modal-location {
+    margin-bottom: 20px;
+    color: #c7d6df;
+    font-size: 14px;
+}
+
+.orgclub-modal-box > p:not(.orgclub-modal-location) {
+    color: #d4e0e7;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.orgclub-activities-title {
+    margin: 24px 0 12px;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.orgclub-modal-box ul {
+    padding-left: 22px;
+    color: #d4e0e7;
+    line-height: 2;
+}
+
+.orgclub-visit-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    border: 1px solid #d8ff3e;
+    border-radius: 30px;
+    background: #d8ff3e;
+    color: #071b2b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.orgclub-visit-btn:hover {
+    background: transparent;
+    color: #d8ff3e;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 768px) {
+    .orgclub-section {
+        padding: 60px 16px;
+    }
+
+    .orgclub-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .orgclub-image {
+        height: 220px;
+    }
+
+    .orgclub-content {
+        padding: 21px;
+    }
+
+    .orgclub-modal-box {
+        padding: 28px 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orgclub-card,
+    .orgclub-image img,
+    .orgclub-btn,
+    .orgclub-visit-btn {
+        transition: none;
+    }
+}
+
+/* ===== SUCCESS STORIES SECTION ===== */
+
+.success-stories-section {
+    padding: 80px 4%;
+    background: #031b2a;
+    color: #ffffff;
+}
+
+.success-stories-container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.success-stories-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.success-stories-heading > span {
+    color: #d8ff3e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.success-stories-heading h2 {
+    margin: 16px 0;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.success-stories-heading h2 strong {
+    color: #d8ff3e;
+}
+
+.success-stories-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #c8d8e8;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.success-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.success-story-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #032335;
+    border: 1px solid #07577a;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.success-story-card:hover {
+    transform: translateY(-7px);
+    border-color: #d8ff3e;
+}
+
+.success-story-image {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.success-story-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.success-story-card:hover .success-story-image img {
+    transform: scale(1.05);
+}
+
+.success-story-year {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background: #d8ff3e;
+    color: #071b2b;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.success-story-content {
+    padding: 25px;
+}
+
+.success-story-content h3 {
+    margin: 0 0 12px;
+    font-size: 23px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.success-story-content h4 {
+    margin: 0 0 15px;
+    color: #d8ff3e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.success-story-content p {
+    margin: 0 0 22px;
+    color: #d0deeb;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.success-story-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #d8ff3e;
+    color: #071b2b;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.success-story-btn:hover {
+    background: #ffffff;
+    color: #071b2b;
+}
+
+.success-story-btn span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+    .success-stories-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .success-stories-section {
+        padding: 55px 5%;
+    }
+
+    .success-stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .success-stories-heading > span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .success-stories-heading p {
+        font-size: 15px;
+    }
+
+    .success-story-image {
+        height: 230px;
+    }
+
+    .success-story-content {
+        padding: 20px;
+    }
+}
+
+/* ===== SUCCESS STORIES SECTION END ===== */
+
+/* =========================
+   ALPINE ASCENTS FOOTER
+========================= */
+
+.alpine-footer {
+    background: linear-gradient(
+        135deg,
+        #07131c,
+        #102a36,
+        #07131c
+    );
+    color: #e8eef0;
+    padding: 60px 7% 0;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #d8ff3e;
+}
+
+.alpine-footer * {
+    box-sizing: border-box;
+}
+
+.alpine-footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.3fr 1.3fr;
+    gap: 40px;
+    padding-bottom: 45px;
+}
+
+/* Logo */
+
+.alpine-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.alpine-footer-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.alpine-footer-brand span {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.alpine-footer-brand strong {
+    color: #d8ff3e;
+}
+
+.alpine-footer-brand small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #c5d1d6;
+}
+
+/* About Text */
+
+.alpine-footer-about p {
+    color: #b9c8ce;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Headings */
+
+.alpine-footer h3 {
+    color: #d8ff3e;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.alpine-footer h3::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 2px;
+    background: #d8ff3e;
+    margin-top: 10px;
+}
+
+/* Footer Links */
+
+.alpine-footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.alpine-footer-links a {
+    color: #c5d1d6;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.alpine-footer-links a:hover {
+    color: #d8ff3e;
+    padding-left: 6px;
+}
+
+/* Social Icons */
+
+.alpine-footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.alpine-footer-social a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d8ff3e;
+    border-radius: 50%;
+    color: #d8ff3e;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.alpine-footer-social a:hover {
+    background: #d8ff3e;
+    color: #07131c;
+    transform: translateY(-4px);
+}
+
+/* Contact */
+
+.alpine-footer-contact > p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #c5d1d6;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    overflow-wrap: anywhere;
+}
+
+.alpine-footer-contact > p span {
+    color: #d8ff3e;
+    min-width: 18px;
+}
+
+.alpine-footer-contact > p a {
+    color: #c5d1d6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.alpine-footer-contact > p a:hover {
+    color: #d8ff3e;
+}
+
+/* Tagline */
+
+.alpine-footer-tagline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+    padding: 15px;
+    border-left: 3px solid #d8ff3e;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.alpine-footer-tagline > span {
+    color: #d8ff3e;
+    font-size: 30px;
+}
+
+.alpine-footer-tagline p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Bottom Bar */
+
+.alpine-footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 22px 0;
+    border-top: 1px solid rgba(216, 255, 62, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.alpine-footer-bottom p {
+    color: #aebdc4;
+    font-size: 13px;
+    margin: 0;
+}
+
+.alpine-footer-bottom a {
+    color: #d8ff3e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alpine-footer-bottom a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+    .alpine-footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .alpine-footer {
+        padding: 40px 6% 0;
+    }
+
+    .alpine-footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .alpine-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .alpine-footer-brand img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* =========================================
+   MOUNTAINEERING RECORDS
+   Scoped CSS — mr- prefix
+========================================= */
+
+.mr-records-page {
+    --mr-lime: #d0ff43;
+    --mr-navy: #001b2b;
+    --mr-cyan: #008dbd;
+    --mr-white: #f4f6ff;
+
+    background: var(--mr-navy);
+    color: var(--mr-white);
+    font-family: Arial, sans-serif;
+    overflow-x: clip;
+}
+
+.mr-records-page *,
+.mr-records-page *::before,
+.mr-records-page *::after {
+    box-sizing: border-box;
+}
+
+/* HERO */
+
+.mr-records-page .mr-records-hero {
+    min-height: 225px;
+    padding: 27px 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 25, 44, .50),
+            rgba(0, 25, 44, .78)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=90")
+        center 48% / cover no-repeat;
+
+    border-bottom: 1px solid #064967;
+}
+
+.mr-records-page .mr-hero-tagline {
+    color: var(--mr-lime);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mr-records-page .mr-records-hero h1 {
+    color: #fff;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 0 0 12px;
+}
+
+.mr-records-page .mr-records-hero h1 span {
+    color: var(--mr-lime);
+}
+
+.mr-records-page .mr-hero-description {
+    color: #e3edff;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* CATEGORY BAR */
+
+.mr-records-page .mr-category-section {
+    padding: 23px 28px;
+    background: #001a29;
+    border-bottom: 1px solid #064967;
+}
+
+.mr-records-page .mr-category-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 65px;
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.mr-records-page .mr-category-item:hover {
+    color: var(--mr-lime);
+}
+
+.mr-records-page .mr-category-icon {
+    flex: 0 0 63px;
+    width: 63px;
+    height: 63px;
+    border: 2px solid var(--mr-lime);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mr-lime);
+    font-size: 27px;
+}
+
+.mr-records-page .mr-category-item h6 {
+    color: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 7px;
+}
+
+.mr-records-page .mr-category-item small {
+    color: #c8d6e9;
+    font-size: 11px;
+}
+
+/* FEATURED RECORDS */
+
+.mr-records-page .mr-records-section {
+    padding: 25px 35px 30px;
+    background:
+        radial-gradient(
+            ellipse at 20% 0%,
+            #062e43 0%,
+            transparent 55%
+        ),
+        #001b2b;
+    border-bottom: 1px solid #064967;
+}
+
+.mr-records-page .mr-section-title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: var(--mr-lime);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 21px;
+}
+
+.mr-records-page .mr-section-title > span {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 27px;
+    height: 5px;
+    background: var(--mr-lime);
+}
+
+.mr-records-page .mr-records-section > .row {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+}
+
+.mr-records-page .mr-record-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(150deg, #03283d, #001a29);
+    border: 1px solid #0088b8;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: transform .3s ease, border-color .3s ease,
+                box-shadow .3s ease;
+}
+
+.mr-records-page .mr-record-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--mr-lime);
+    box-shadow: 0 8px 22px rgba(0, 150, 200, .15);
+}
+
+.mr-records-page .mr-record-image {
+    position: relative;
+    height: 182px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.mr-records-page .mr-record-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.mr-records-page .mr-record-card:hover .mr-record-image img {
+    transform: scale(1.04);
+}
+
+.mr-records-page .mr-record-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 7px 15px;
+    color: #142332;
+    background: var(--mr-lime);
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mr-records-page .mr-record-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px 17px;
+}
+
+.mr-records-page .mr-record-body h3 {
+    color: #f5f7ff;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 0 11px;
+}
+
+.mr-records-page .mr-record-body h4 {
+    color: var(--mr-lime);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.mr-records-page .mr-record-body h4 i {
+    font-size: 23px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.mr-records-page .mr-record-body p {
+    color: #dce8f7;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+.mr-records-page .mr-record-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 11px;
+    color: var(--mr-lime);
+    border: 1px solid var(--mr-lime);
+    border-radius: 25px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* QUICK FACTS */
+
+.mr-records-page .mr-facts-section {
+    padding: 30px 38px;
+    background: #001b2b;
+    border-bottom: 1px solid #064967;
+}
+
+.mr-records-page .mr-facts-label {
+    color: var(--mr-lime);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.mr-records-page .mr-facts-heading {
+    color: #fff;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
+.mr-records-page .mr-facts-heading span {
+    display: block;
+    color: var(--mr-lime);
+    margin-top: 3px;
+}
+
+.mr-records-page .mr-facts-section .col-lg-3 > p:last-child {
+    color: #dce8f7;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.mr-records-page .mr-facts-list {
+    padding-left: 15px;
+}
+
+.mr-records-page .mr-fact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 8px 0 10px;
+}
+
+.mr-records-page .mr-fact-icon {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid var(--mr-lime);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mr-lime);
+    font-size: 23px;
+}
+
+.mr-records-page .mr-fact-item h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 3px;
+}
+
+.mr-records-page .mr-fact-item p {
+    color: #dce8f7;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* QUOTE AND BACKGROUND IMAGE */
+
+.mr-records-page .mr-quote-section {
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            #001b2b 0%,
+            rgba(0, 27, 43, .75) 38%,
+            rgba(0, 27, 43, .08) 100%
+        ),
+        url("https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=85")
+        center / cover no-repeat;
+}
+
+.mr-records-page .mr-quote-content {
+    width: 100%;
+    max-width: 390px;
+    padding: 15px;
+}
+
+.mr-records-page .mr-quote-mark {
+    color: var(--mr-lime);
+    font-size: 65px;
+    font-weight: bold;
+    height: 47px;
+    line-height: 1;
+}
+
+.mr-records-page .mr-quote-content blockquote {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.65;
+    margin: 10px 0 15px;
+}
+
+.mr-records-page .mr-quote-content p {
+    color: var(--mr-lime);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* DECORATIVE BOTTOM */
+
+.mr-records-page .mr-records-bottom {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+    background: #001724;
+}
+
+.mr-records-page .mr-records-bottom span {
+    width: 17%;
+    max-width: 215px;
+    height: 2px;
+    background: var(--mr-lime);
+}
+
+.mr-records-page .mr-records-bottom i {
+    color: var(--mr-lime);
+    font-size: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1199px) {
+    .mr-records-page .mr-category-section {
+        padding: 18px 15px;
+    }
+
+    .mr-records-page .mr-category-item {
+        justify-content: flex-start;
+    }
+
+    .mr-records-page .mr-records-section {
+        padding: 24px 22px;
+    }
+
+    .mr-records-page .mr-facts-section {
+        padding: 25px 22px;
+    }
+
+    .mr-records-page .mr-facts-list {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mr-records-page .mr-hero-tagline {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .mr-records-page .mr-records-hero {
+        padding: 35px 15px;
+    }
+
+    .mr-records-page .mr-category-section {
+        padding: 18px 12px;
+    }
+
+    .mr-records-page .mr-category-item {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .mr-records-page .mr-category-icon {
+        flex-basis: 46px;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    .mr-records-page .mr-category-item h6 {
+        font-size: 12px;
+    }
+
+    .mr-records-page .mr-category-item small {
+        font-size: 10px;
+    }
+
+    .mr-records-page .mr-records-section {
+        padding: 24px 15px;
+    }
+
+    .mr-records-page .mr-record-image {
+        height: 210px;
+    }
+
+    .mr-records-page .mr-facts-section {
+        padding: 25px 18px;
+    }
+
+    .mr-records-page .mr-facts-list {
+        padding-left: 0;
+    }
+
+    .mr-records-page .mr-quote-section {
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mr-records-page .mr-category-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mr-records-page .mr-hero-tagline {
+        letter-spacing: 1px;
+    }
+}
+
+.mr-records-page {
+    scroll-margin-top: 80px;
+}
+
+/* ==========================================
+   LOCATION SECTION
+   Unique prefix: mloc-
+   Scoped CSS - does not affect other sections
+========================================== */
+
+.mloc-location-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            115deg,
+            rgba(0, 20, 34, 0.97),
+            rgba(3, 43, 59, 0.94)
+        ),
+        url("myimg/image.png") center/cover no-repeat;
+
+    scroll-margin-top: 80px;
+
+    padding: 25px 25px 0;
+}
+
+.mloc-location-overlay {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading */
+
+.mloc-location-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mloc-location-subtitle {
+    display: inline-block;
+    color: #d0ff43;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+.mloc-location-heading h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.mloc-location-heading p {
+    color: #c5d4dd;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Main content */
+
+.mloc-location-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+/* Contact information */
+
+.mloc-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 30px;
+    background: rgba(0, 12, 23, 0.62);
+    border: 1px solid rgba(208, 255, 67, 0.25);
+    border-radius: 16px;
+}
+
+.mloc-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.mloc-contact-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(208, 255, 67, 0.12);
+    border: 1px solid rgba(208, 255, 67, 0.5);
+    border-radius: 12px;
+    color: #d0ff43;
+    font-size: 19px;
+    transition: 0.3s ease;
+}
+
+.mloc-contact-item:hover .mloc-contact-icon {
+    background: #d0ff43;
+    color: #001b2b;
+    transform: translateY(-3px);
+}
+
+.mloc-contact-details h3,
+.mloc-contact-social h3 {
+    color: #d0ff43;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.mloc-contact-details p {
+    color: #e0e8ed;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Social links */
+
+.mloc-contact-social {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.mloc-social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.mloc-social-links a {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #d0ff43;
+    background: rgba(208, 255, 67, 0.08);
+    border: 1px solid rgba(208, 255, 67, 0.45);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.mloc-social-links a:hover {
+    color: #001b2b;
+    background: #d0ff43;
+    transform: translateY(-4px);
+}
+
+/* Map */
+
+.mloc-map-wrapper {
+    width: 100%;
+    min-height: 430px;
+    overflow: hidden;
+    border: 2px solid rgba(208, 255, 67, 0.65);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.mloc-location-map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    border: 0;
+}
+
+/* Directions button */
+
+.mloc-directions-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 55px;
+}
+
+.mloc-directions-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 28px;
+    color: #001b2b;
+    background: #d0ff43;
+    border: 2px solid #d0ff43;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.mloc-directions-btn:hover {
+    color: #d0ff43;
+    background: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(208, 255, 67, 0.15);
+}
+
+/* Decorative divider */
+
+.mloc-mountain-divider {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(
+        135deg,
+        transparent 49%,
+        rgba(208, 255, 67, 0.18) 50%,
+        transparent 51%
+    );
+    border-top: 1px solid rgba(208, 255, 67, 0.2);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .mloc-location-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mloc-contact-info {
+        gap: 25px;
+    }
+
+    .mloc-map-wrapper,
+    .mloc-location-map {
+        min-height: 380px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .mloc-location-section {
+        padding: 60px 16px 0;
+    }
+
+    .mloc-location-heading {
+        margin-bottom: 30px;
+    }
+
+    .mloc-location-subtitle {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .mloc-location-heading p {
+        font-size: 14px;
+    }
+
+    .mloc-contact-info {
+        padding: 22px 17px;
+    }
+
+    .mloc-contact-item {
+        gap: 12px;
+    }
+
+    .mloc-contact-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .mloc-contact-details h3,
+    .mloc-contact-social h3 {
+        font-size: 15px;
+    }
+
+    .mloc-contact-details p {
+        font-size: 13px;
+    }
+
+    .mloc-map-wrapper,
+    .mloc-location-map {
+        min-height: 300px;
+    }
+
+    .mloc-directions-btn {
+        padding: 13px 20px;
+        font-size: 11px;
+    }
+}
+.visitor-icon {
+    color: #ff4643;
+    margin-right: 5px;
+}
+
+/* ==============================
+   MOUNTAINEERING TYPE POPUP
+============================== */
+
+.type-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 10, 20, 0.85);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+
+.type-popup-overlay.type-popup-active {
+    display: flex;
+}
+
+.type-popup-box {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #071b2b;
+    border: 1px solid rgba(208, 255, 67, 0.5);
+    border-radius: 18px;
+    padding: 40px;
+    color: #ffffff;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: typePopupShow 0.3s ease;
+}
+
+.type-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #d0ff43;
+    color: #071b2b;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.type-popup-close:hover {
+    background: #ffffff;
+    transform: rotate(90deg);
+}
+
+.type-popup-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.type-popup-label {
+    color: #d0ff43;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.type-popup-text h2 {
+    color: #d0ff43;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 15px 0 20px;
+}
+
+.type-popup-text p {
+    color: #e0e8ee;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.type-popup-image img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(208, 255, 67, 0.35);
+}
+
+@keyframes typePopupShow {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .type-popup-box {
+        padding: 55px 20px 25px;
+    }
+
+    .type-popup-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .type-popup-text h2 {
+        font-size: 25px;
+    }
+
+    .type-popup-image img {
+        height: 240px;
+    }
+}
+/* ==================================
+   HISTORY 3D FLIP CARD
+================================== */
+
+.history3d-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: rgba(0, 10, 20, 0.88);
+    backdrop-filter: blur(8px);
+}
+
+.history3d-overlay.history3d-active {
+    display: flex;
+}
+
+.history3d-scene {
+    position: relative;
+    width: min(850px, 100%);
+    height: 530px;
+    perspective: 1400px;
+}
+
+.history3d-close {
+    position: absolute;
+    top: -18px;
+    right: -15px;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #d0ff43;
+    border-radius: 50%;
+    background: #001b2b;
+    color: #d0ff43;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.history3d-close:hover {
+    background: #d0ff43;
+    color: #001b2b;
+    transform: rotate(90deg);
+}
+
+.history3d-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.85s cubic-bezier(.2, .7, .2, 1);
+}
+
+.history3d-card.history3d-flipped {
+    transform: rotateY(180deg);
+}
+
+.history3d-face {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border: 2px solid rgba(208, 255, 67, 0.7);
+    border-radius: 22px;
+    background: #001b2b;
+    color: #fff;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.history3d-front {
+    display: flex;
+    flex-direction: column;
+}
+
+.history3d-front img {
+    width: 100%;
+    height: 62%;
+    object-fit: cover;
+}
+
+.history3d-front-content {
+    flex: 1;
+    padding: 18px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #001b2b, #10394b);
+}
+
+.history3d-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d0ff43;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.history3d-front h2,
+.history3d-back h2 {
+    margin: 0 0 15px;
+    color: #d0ff43;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 800;
+}
+
+.history3d-view-btn,
+.history3d-back-btn {
+    padding: 10px 24px;
+    border: 2px solid #d0ff43;
+    border-radius: 30px;
+    background: #d0ff43;
+    color: #001b2b;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.history3d-view-btn:hover,
+.history3d-back-btn:hover {
+    background: transparent;
+    color: #d0ff43;
+    transform: translateY(-3px);
+}
+
+.history3d-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    transform: rotateY(180deg);
+    background: radial-gradient(circle at top, #17475a, #00101c 75%);
+}
+
+.history3d-back p {
+    max-width: 680px;
+    margin: 5px 0 25px;
+    color: #e5edf2;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+    .history3d-scene {
+        height: 480px;
+    }
+
+    .history3d-front img {
+        height: 55%;
+    }
+
+    .history3d-front-content {
+        padding: 15px;
+    }
+
+    .history3d-back {
+        padding: 25px;
+    }
+
+    .history3d-back p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .history3d-close {
+        right: -8px;
+        top: -14px;
+    }
+}
+/* ===== OUR MOUNTAINS POPUP ===== */
+
+.our-mountain-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 10, 20, 0.88);
+    backdrop-filter: blur(7px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.our-mountain-popup.active {
+    display: flex;
+}
+
+.our-mountain-popup-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background: #071b2b;
+    border: 1px solid #d0ff43;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+    animation: mountainPopupOpen 0.4s ease;
+}
+
+.our-mountain-popup-image {
+    width: 45%;
+    min-height: 400px;
+}
+
+.our-mountain-popup-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.our-mountain-popup-content {
+    width: 55%;
+    padding: 55px 35px 35px;
+    color: white;
+}
+
+.our-mountain-label {
+    color: #d0ff43;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.our-mountain-popup-content h2 {
+    color: #d0ff43;
+    font-size: 32px;
+    margin: 18px 0;
+}
+
+.our-mountain-popup-content p {
+    color: #eeeeee;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.our-mountain-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #d0ff43;
+    color: #071b2b;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.our-mountain-close:hover {
+    background: white;
+    transform: rotate(90deg);
+}
+
+@keyframes mountainPopupOpen {
+    from {
+        opacity: 0;
+        transform: scale(0.85) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@media (max-width: 650px) {
+    .our-mountain-popup-box {
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .our-mountain-popup-image {
+        width: 100%;
+        min-height: 220px;
+        height: 220px;
+    }
+
+    .our-mountain-popup-image img {
+        min-height: 220px;
+        height: 220px;
+    }
+
+    .our-mountain-popup-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .our-mountain-popup-content h2 {
+        font-size: 25px;
+    }
+}
+
+
+
+/* //new */
+/* =========================
+   MOBILE RESPONSIVENESS FIXES
+========================= */
+
+@media (max-width: 768px) {
+    /* Prevent horizontal scrolling on mobile */
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Fix Hero section height and text sizing on mobile */
+   .hero-wrapper {
+        height: 550px !important;
+    }
+
+    .hero-section {
+        height: 100% !important;
+    }
+
+    .hero-bg-img {
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    .hero-content {
+        left: 5% !important;
+        right: 5% !important;
+        max-width: 90% !important;
+        padding: 20px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 34px !important;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 15px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-btn, .hero-btn-outline {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Fix About Us / Hero sections flex layout on mobile */
+    .about-hero {
+        flex-direction: column !important;
+        padding: 50px 5% !important;
+        gap: 30px !important;
+    }
+
+    .about-hero-content, .about-hero-image {
+        width: 100% !important;
+    }
+
+    .about-hero-image {
+        height: 280px !important;
+    }
+
+    /* Fix Contact Section Grid */
+    .contact-page-container {
+        grid-template-columns: 1fr !important;
+        width: 95% !important;
+        margin: 30px auto 0 !important;
+        gap: 20px !important;
+    }
+
+    /* Fix Modals sizing on mobile */
+    .modal-dialog {
+        margin: 10px !important;
+        max-width: calc(100% - 20px) !important;
+    }
+
+    .our-mountain-popup-box, 
+    .alpine-technique-modal-box, 
+    .type-popup-content,
+    .orgclub-modal-box {
+        grid-template-columns: 1fr !important;
+        max-height: 85vh !important;
+        overflow-y: auto !important;
+    }
+
+    .our-mountain-popup-image, 
+    .our-mountain-popup-image img {
+        min-height: 200px !important;
+        height: 200px !important;
+    }
+}

@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountaineering Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<!-- HERO / SLIDER WRAPPER -->
+<div class="hero-wrapper" id="home">
+
+    <!-- NAVBAR (Positioned Absolute over Image) -->
+    <nav class="navbar navbar-expand-lg navbar-dark my-custom-nav">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="myimg/logo_mountain-removebg-preview.png" alt="Logo" class="navbar-logo">
+                <div class="logo-text">
+                    <span class="brand-title">ALPINE ASCENTS</span>
+                    <span class="brand-subtitle">INTERNATIONAL</span>
+                </div>
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAVIGATION LINKS -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Mountaineering
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#historymy">History</a></li>
+                            <li><a class="dropdown-item" href="#mountain-types">Types / Styles</a></li>
+                            <li><a class="dropdown-item" href="#techniques">Techniques</a></li>
+                            <li><a class="dropdown-item" href="#Sheltering">Sheltering</a></li>
+                            <li><a class="dropdown-item" href="#hazards">Hazards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#mountaineering-records">Records</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Expeditions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#organizations-clubs">Organizations / Clubs</a></li>
+                            <li><a class="dropdown-item" href="#location">Locations</a></li>
+                            <li><a class="dropdown-item" href="#success-stories">Success Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactus">Contact</a></li>
+                </ul>
+
+                <!-- VISITOR COUNT -->
+                <div class="visitor-count">
+                  
+                   <i class="fa-solid fa-users visitor-icon"></i><span id="visitorCount">0</span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO IMAGE -->
+    <div class="hero-section">
+        <img src="myimg/image.png" alt="Mountain Header" class="hero-bg-img">
+
+        <!-- TEXT ON IMAGE -->
+        <div class="hero-content">
+            <h1> Explore the <span>mountains</span> Beyond the <span>Peak</span> </h1>
+            <p>
+                Explore breathtaking mountains, challenging expeditions,
+                and unforgettable journeys into the heart of nature.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn" data-bs-toggle="modal" data-bs-target="#mountaineeringModal">
+                    Explore Mountaineering
+                </a>
+                <a href="#" class="hero-btn" data-bs-toggle="modal" data-bs-target="#expeditionsModal">
+                    Discover Expeditions
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+     MOUNTAINEERING MODAL
+========================= -->
+<div class="modal fade" id="mountaineeringModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h2 class="modal-title">Explore Mountaineering</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+                <!-- INTRODUCTION -->
+                <section class="mountain-intro">
+                    <div>
+                        <h3>What is Mountaineering?</h3>
+                        <p>
+                            Mountaineering is the adventure of exploring,
+                            climbing and travelling through mountainous
+                            environments. It combines physical challenge,
+                            technical skills and a deep connection with nature.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- TYPES -->
+                <h3 class="modal-section-title">Types of Mountaineering</h3>
+                <div class="row g-4">
+                    <!-- ALPINE -->
+                    <div class="col-md-4">
+                        <div class="mountain-card">
+                            <h4>Alpine Climbing</h4>
+                            <img src="myimg/fullsizeoutput_250f-scaled.jpeg" alt="Alpine Climbing" class="mountain-type-img">
+                            <p>Climbing high mountains using a combination of hiking, rock climbing and ice climbing.</p>
+                            <button class="btn"><span>Get started</span></button>
+                        </div>
+                    </div>
+
+                    <!-- ROCK -->
+                    <div class="col-md-4">
+                        <div class="mountain-card">
+                            <h4>Rock Climbing</h4>
+                            <img src="myimg/1647536477-mountaineering-ruth-2.webp" alt="Rock Climbing" class="mountain-type-img">
+                            <p>Climbing natural rock faces using ropes, harnesses and specialized equipment.</p>
+                            <button class="btn"><span>Get started</span></button>
+                        </div>
+                    </div>
+
+                    <!-- ICE -->
+                    <div class="col-md-4">
+                        <div class="mountain-card">
+                            <h4>Ice Climbing</h4>
+                            <img src="myimg/ice.jpg" alt="Ice Climbing" class="mountain-type-img">
+                            <p>Climbing frozen waterfalls, glaciers and steep mountain ice using specialized tools.</p>
+                            <button class="btn"><span>Get started</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SAFETY -->
+                <div class="mountain-safety mt-4">
+                    <div class="safety-image">
+                        <img src="myimg/images (3).jpg" alt="Mountain Safety">
+                    </div>
+                    <div class="safety-content">
+                        <h3>Mountain Safety</h3>
+                        <p>
+                            Proper preparation, weather awareness, suitable
+                            equipment and knowledge of mountain hazards are
+                            essential for a safe mountaineering experience.
+                        </p>
+                        <button class="btn"><span>Get started</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL FOOTER -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+     EXPEDITIONS MODAL
+========================= -->
+<div class="modal fade" id="expeditionsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+                <h2 class="modal-title">Discover Expeditions</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+                <!-- INTRODUCTION -->
+                <section class="expedition-intro">
+                    <h3>Discover Mountain Expeditions</h3>
+                    <p>
+                        Discover exciting mountain expeditions,
+                        breathtaking destinations and unforgettable
+                        journeys through some of the world's most
+                        spectacular mountain regions.
+                    </p>
+                </section>
+
+                <!-- EXPEDITIONS -->
+                <h3 class="expedition-section-title">Featured Expeditions</h3>
+                <div class="row g-4">
+                    <!-- EXPEDITION 1 -->
+                    <div class="col-md-4">
+                        <div class="expedition-card">
+                            <h4>Mount Everest Expedition</h4>
+                            <img src="myimg/Climbers-side-Nepali-Mount-Everest.webp" alt="Mount Everest Expedition" class="expedition-img">
+                            <p>Explore the world's highest mountain and discover the challenges of an unforgettable Everest expedition.</p>
+                            <button class="btn"><span>Read More</span></button>
+                        </div>
+                    </div>
+
+                    <!-- EXPEDITION 2 -->
+                    <div class="col-md-4">
+                        <div class="expedition-card">
+                            <h4>K2 Expedition</h4>
+                            <img src="myimg/k2.jpg" alt="K2 Expedition" class="expedition-img">
+                            <p>Discover the legendary K2 and learn about the demanding routes and breathtaking mountain landscapes.</p>
+                            <button class="btn"><span>Read More</span></button>
+                        </div>
+                    </div>
+
+                    <!-- EXPEDITION 3 -->
+                    <div class="col-md-4">
+                        <div class="expedition-card">
+                            <h4>Alps Expedition</h4>
+                            <img src="myimg/alp.webp" alt="Alps Expedition" class="expedition-img">
+                            <p>Experience the beauty of the Alps while exploring exciting climbing routes and mountain adventures.</p>
+                            <button class="btn"><span>Read More</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPEDITION PLANNING -->
+                <div class="expedition-planning mt-4">
+                    
+                    <div class="planning-content">
+                        <h3>Plan Your Expedition</h3>
+                        <p>
+                            Discovering mountaineering means learning to safely scale high-altitude rock, snow, and ice through guided alpine courses and progressive peak expeditions.
+                            A successful expedition requires careful
+                            planning, proper equipment, route
+                            knowledge and awareness of mountain
+                            conditions.
+                        </p>
+                        <div class="planning-image">
+                        <img src="myimg/navigating-with-compass-stockcake.jpg" alt="Mountain Expedition ">
+                    </div>
+                        <button class="btn"><span>Get Started</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL FOOTER -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+     MOUNTAINEERING TECHNIQUES
+========================= -->
+
+<section class="alpine-techniques" id="techniques">
+
+    <!-- SECTION HEADER -->
+    <div class="alpine-techniques-header">
+
+        <span class="alpine-techniques-label">
+            EXPLORE • CLIMB • SURVIVE
+        </span>
+
+        <h2>
+            Mountaineering
+            <br>
+            <span>Techniques.</span>
+        </h2>
+
+        <p>
+            Mountaineering combines physical strength, technical skills,
+            navigation and careful decision-making. These techniques help
+            climbers move through different mountain environments while
+            understanding the challenges and risks of each terrain.
+        </p>
+
+    </div>
+
+
+    <!-- TECHNIQUES CARDS -->
+    <div class="alpine-techniques-grid">
+
+
+        <!-- 01 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/walking.webp"
+                alt="Walking and scrambling"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">01</span>
+
+                <div class="alpine-technique-icon">🥾</div>
+
+                <h3>Walking &amp; Scrambling</h3>
+
+                <p>
+                    Walking and scrambling are fundamental mountain skills.
+                    Climbers move across trails, rocky paths and steep terrain
+                    while maintaining balance, choosing secure footholds and
+                    conserving energy for longer journeys.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Walking &amp; Scrambling',
+                        'myimg/walking.webp',
+                        'Walking and scrambling are fundamental mountain skills. Climbers move across trails, rocky paths and steep terrain while maintaining balance, choosing secure footholds and conserving energy for longer journeys.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 02 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/rock.jfif"
+                alt="Rock climbing"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">02</span>
+
+                <div class="alpine-technique-icon">🧗</div>
+
+                <h3>Rock Climbing</h3>
+
+                <p>
+                    Rock climbing involves carefully using hands, feet and
+                    climbing equipment to ascend rock faces. Good technique
+                    focuses on balance, efficient movement and maintaining
+                    secure contact with the rock.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Rock Climbing',
+                        'myimg/rock.jfif',
+                        'Rock climbing involves carefully using hands, feet and climbing equipment to ascend rock faces. Good technique focuses on balance, efficient movement and maintaining secure contact with the rock.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 03 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/rope.jfif"
+                alt="Rope techniques"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">03</span>
+
+                <div class="alpine-technique-icon">🪢</div>
+
+                <h3>Rope Techniques</h3>
+
+                <p>
+                    Rope techniques include knots, belaying and rappelling.
+                    These skills allow climbers to manage steep sections,
+                    protect one another and control movement on technical
+                    terrain.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Rope Techniques',
+                        'myimg/rope.jfif',
+                        'Rope techniques include knots, belaying and rappelling. These skills allow climbers to manage steep sections, protect one another and control movement on technical terrain.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 04 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/ice climbing.jfif"
+                alt="Snow and ice climbing"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">04</span>
+
+                <div class="alpine-technique-icon">❄️</div>
+
+                <h3>Snow &amp; Ice Climbing</h3>
+
+                <p>
+                    Snow and ice climbing requires specialized movement and
+                    equipment such as crampons and ice axes. Climbers need to
+                    understand the condition of the surface and maintain
+                    secure positioning.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Snow &amp; Ice Climbing',
+                        'myimg/ice climbing.jfif',
+                        'Snow and ice climbing requires specialized movement and equipment such as crampons and ice axes. Climbers need to understand the condition of the surface and maintain secure positioning.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 05 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/self arrest.jfif"
+                alt="Self arrest"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">05</span>
+
+                <div class="alpine-technique-icon">⛏️</div>
+
+                <h3>Self-Arrest</h3>
+
+                <p>
+                    Self-arrest is a technique used to stop or control a slide
+                    on snow. It involves using an ice axe correctly while
+                    positioning the body to regain control of movement.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Self-Arrest',
+                        'myimg/self arrest.jfif',
+                        'Self-arrest is a technique used to stop or control a slide on snow. It involves using an ice axe correctly while positioning the body to regain control of movement.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 06 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/glacier.jfif"
+                alt="Glacier travel"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">06</span>
+
+                <div class="alpine-technique-icon">🏔️</div>
+
+                <h3>Glacier Travel</h3>
+
+                <p>
+                    Glacier travel involves moving across snow and ice while
+                    being aware of hidden crevasses and changing terrain.
+                    Climbers commonly use ropes and specialized equipment
+                    for protection.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Glacier Travel',
+                        'myimg/glacier.jfif',
+                        'Glacier travel involves moving across snow and ice while being aware of hidden crevasses and changing terrain. Climbers commonly use ropes and specialized equipment for protection.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 07 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/navigating-with-compass-stockcake.jpg"
+                alt="Mountain navigation"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">07</span>
+
+                <div class="alpine-technique-icon">🧭</div>
+
+                <h3>Navigation</h3>
+
+                <p>
+                    Mountain navigation uses maps, compass, GPS and natural
+                    landmarks to understand the terrain and follow an
+                    appropriate route, especially when visibility changes.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Navigation',
+                        'myimg/navigating-with-compass-stockcake.jpg',
+                        'Mountain navigation uses maps, compass, GPS and natural landmarks to understand the terrain and follow an appropriate route, especially when visibility changes.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 08 -->
+        <article class="alpine-technique-card">
+
+            <img
+                src="myimg/whether.jfif"
+                alt="Mountain weather"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">08</span>
+
+                <div class="alpine-technique-icon">🌦️</div>
+
+                <h3>Weather Assessment</h3>
+
+                <p>
+                    Mountain weather can change quickly. Climbers need to
+                    observe forecasts, clouds, wind, temperature and other
+                    conditions before and during a climb.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Weather Assessment',
+                        'myimg/whether.jfif',
+                        'Mountain weather can change quickly. Climbers need to observe forecasts, clouds, wind, temperature and other conditions before and during a climb.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 09 -->
+        <article class="alpine-technique-card alpine-technique-wide">
+
+            <img
+                src="myimg/survival.jpg"
+                alt="Mountain camping and survival"
+                class="alpine-technique-image"
+            >
+
+            <div class="alpine-technique-content">
+
+                <span class="alpine-technique-number">09</span>
+
+                <div class="alpine-technique-icon">🏕️</div>
+
+                <h3>Camping &amp; Survival</h3>
+
+                <p>
+                    Camping and survival skills help mountaineers manage
+                    shelter, food, water and equipment during extended trips.
+                    Preparation is especially important in remote and
+                    changing mountain environments.
+                </p>
+
+                <button
+                    type="button"
+                    class="alpine-technique-button"
+                    onclick="openAlpineTechniqueModal(
+                        'Camping &amp; Survival',
+                        'myimg/survival.jpg',
+                        'Camping and survival skills help mountaineers manage shelter, food, water and equipment during extended trips. Preparation is especially important in remote and changing mountain environments.'
+                    )"
+                >
+                    Explore Technique →
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- TECHNIQUE MODAL -->
+
+    <div class="alpine-technique-modal" id="alpineTechniqueModal">
+
+        <div class="alpine-technique-modal-box">
+
+            <button
+                type="button"
+                class="alpine-technique-close"
+                onclick="closeAlpineTechniqueModal()"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div class="alpine-technique-modal-image">
+
+                <img
+                    id="alpineTechniqueModalImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+            <div class="alpine-technique-modal-content">
+
+                <span class="alpine-technique-modal-label">
+                    MOUNTAINEERING TECHNIQUE
+                </span>
+
+                <h2 id="alpineTechniqueModalTitle">
+                    Technique
+                </h2>
+
+                <p id="alpineTechniqueModalDescription">
+                    Description
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TYPES / STYLES SECTION
+========================= -->
+
+<section id="mountain-types" class="mountain-types-section">
+
+    <div class="types-heading">
+        <h2>Types & Styles of Mountaineering</h2>
+
+        <p>
+            Explore different ways of climbing and experiencing
+            the world's most challenging mountain environments.
+        </p>
+    </div>
+
+
+    <div class="types-container">
+
+        <!-- ALPINE CLIMBING -->
+        <div class="type-card">
+
+            <div class="type-image">
+                <img src="myimg/fullsizeoutput_250f-scaled.jpeg"
+                     alt="Alpine Climbing">
+            </div>
+
+            <div class="type-content">
+
+                <h3>Alpine Climbing</h3>
+
+                <p>
+                    A combination of hiking, rock climbing and
+                    ice climbing used to reach high mountain peaks.
+                </p>
+
+<a href="#" class="type-btn"
+   onclick="openTypePopup('alpine', this); return false;">
+    Read More
+</a>
+            </div>
+
+        </div>
+
+
+        <!-- ROCK CLIMBING -->
+        <div class="type-card">
+
+            <div class="type-image">
+                <img src="myimg/1647536477-mountaineering-ruth-2.webp"
+                     alt="Rock Climbing">
+            </div>
+
+            <div class="type-content">
+
+                <h3>Rock Climbing</h3>
+
+                <p>
+                    A climbing style focused on natural rock faces,
+                    using ropes, harnesses and climbing techniques.
+                </p>
+<a href="#" class="type-btn"
+   onclick="openTypePopup('rock', this); return false;">
+    Read More
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ICE CLIMBING -->
+        <div class="type-card">
+
+            <div class="type-image">
+                <img src="myimg/ice.jpg"
+                     alt="Ice Climbing">
+            </div>
+
+            <div class="type-content">
+
+                <h3>Ice Climbing</h3>
+
+                <p>
+                    A challenging style of climbing frozen waterfalls,
+                    glaciers and steep mountain ice.
+                </p>
+<a href="#" class="type-btn"
+   onclick="openTypePopup('ice', this); return false;">
+    Read More
+</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- MOUNTAINEERING TYPE POPUP -->
+<div class="type-popup-overlay" id="typePopup">
+
+    <div class="type-popup-box">
+
+        <button type="button"
+                class="type-popup-close"
+                onclick="closeTypePopup()"
+                aria-label="Close popup">
+            &times;
+        </button>
+
+        <div class="type-popup-content">
+
+            <div class="type-popup-text">
+                <span class="type-popup-label">EXPLORE MOUNTAINEERING</span>
+
+                <h2 id="typePopupTitle">Mountaineering Type</h2>
+
+                <p id="typePopupPara1"></p>
+                <p id="typePopupPara2"></p>
+                <p id="typePopupPara3"></p>
+            </div>
+
+            <div class="type-popup-image">
+                <img id="typePopupImg" src="" alt="Mountaineering">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ORGANIZATIONS / CLUBS SECTION START -->
+<section class="orgclub-section" id="organizations-clubs">
+
+    <div class="orgclub-container">
+
+        <div class="orgclub-heading">
+            <span class="orgclub-subtitle">EXPLORE • CONNECT • CLIMB</span>
+
+            <h2>Mountaineering <span>Organizations & Clubs</span></h2>
+
+            <p>
+                Discover mountaineering organizations and climbing clubs
+                that inspire adventure, promote safety, and connect climbers
+                around the world.
+            </p>
+        </div>
+
+        <div class="orgclub-grid">
+
+            <!-- CARD 1 -->
+            <article class="orgclub-card">
+                <div class="orgclub-image">
+                    <img src="myimg/image.png" alt="Mountain landscape for UIAA">
+                    <span class="orgclub-number">01</span>
+                </div>
+
+                <div class="orgclub-content">
+                    <span class="orgclub-tag">INTERNATIONAL</span>
+                    <h3>UIAA</h3>
+                    <p class="orgclub-location">International Organization</p>
+
+                    <p class="orgclub-description">
+                        Promotes climbing, mountaineering, mountain safety
+                        and environmental protection worldwide.
+                    </p>
+
+                    <button class="orgclub-btn" type="button"
+                        data-orgclub="uiaa"
+                        onclick="orgclubOpenDetails('uiaa')">
+                        Read More <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="orgclub-card">
+                <div class="orgclub-image">
+                    <img src="myimg/Climbers-side-Nepali-Mount-Everest.webp"
+                         alt="Mountaineers exploring the mountains of Pakistan">
+                    <span class="orgclub-number">02</span>
+                </div>
+
+                <div class="orgclub-content">
+                    <span class="orgclub-tag">PAKISTAN</span>
+                    <h3>Alpine Club of Pakistan</h3>
+                    <p class="orgclub-location">Pakistan</p>
+
+                    <p class="orgclub-description">
+                        Associated with mountaineering, climbing training,
+                        trekking and high-altitude expeditions in Pakistan.
+                    </p>
+
+                    <button class="orgclub-btn" type="button"
+                        onclick="orgclubOpenDetails('acp')">
+                        Read More <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="orgclub-card">
+                <div class="orgclub-image">
+                    <img src="myimg/alp.webp" alt="High mountain peaks">
+                    <span class="orgclub-number">03</span>
+                </div>
+
+                <div class="orgclub-content">
+                    <span class="orgclub-tag">NEPAL</span>
+                    <h3>Nepal Mountaineering Association</h3>
+                    <p class="orgclub-location">Nepal</p>
+
+                    <p class="orgclub-description">
+                        Supports mountaineering development, climbing
+                        education and mountain tourism in Nepal.
+                    </p>
+
+                    <button class="orgclub-btn" type="button"
+                        onclick="orgclubOpenDetails('nma')">
+                        Read More <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="orgclub-card">
+                <div class="orgclub-image">
+                    <img src="myimg/images (3).jpg" alt="Mountain rescue and safety">
+                    <span class="orgclub-number">04</span>
+                </div>
+
+                <div class="orgclub-content">
+                    <span class="orgclub-tag">SAFETY</span>
+                    <h3>Pakistan Mountain Rescue</h3>
+                    <p class="orgclub-location">Mountain Safety</p>
+
+                    <p class="orgclub-description">
+                        Learn about mountain rescue, first aid, emergency
+                        preparedness and safe climbing practices.
+                    </p>
+
+                    <button class="orgclub-btn" type="button"
+                        onclick="orgclubOpenDetails('rescue')">
+                        Read More <span>→</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- DETAILS MODAL -->
+<div class="orgclub-modal" id="orgclubModal"
+     aria-hidden="true" role="dialog"
+     aria-modal="true" aria-labelledby="orgclubModalTitle">
+
+    <div class="orgclub-modal-box">
+
+        <button class="orgclub-close" type="button"
+                onclick="orgclubCloseDetails()"
+                aria-label="Close details">&times;</button>
+
+        <span class="orgclub-tag">ORGANIZATION DETAILS</span>
+
+        <h2 id="orgclubModalTitle">Organization Name</h2>
+
+        <p class="orgclub-modal-location" id="orgclubModalLocation"></p>
+
+        <p id="orgclubModalDescription"></p>
+
+        <h3 class="orgclub-activities-title">Main Activities</h3>
+
+        <ul id="orgclubModalActivities"></ul>
+
+        <a class="orgclub-visit-btn" id="orgclubVisitLink"
+           href="https://theuiaa.org/"
+           target="_blank" rel="noopener noreferrer">
+            Visit Official Website →
+        </a>
+    </div>
+</div>
+<!-- ORGANIZATIONS / CLUBS SECTION END -->
+
+<!-- Success Stories Section Start -->
+<section class="success-stories-section" id="success-stories">
+
+    <div class="success-stories-container">
+
+        <div class="success-stories-heading">
+            <span>INSPIRING • COURAGE • ACHIEVEMENT</span>
+
+            <h2>Mountaineering <strong>Success Stories</strong></h2>
+
+            <p>
+                Discover the inspiring journeys of climbers who challenged
+                the world's highest peaks and made history.
+            </p>
+        </div>
+
+        <div class="success-stories-grid">
+
+            <!-- Story 1 -->
+            <div class="success-story-card">
+                <div class="success-story-image">
+                    <img src="myimg/achiv.jpg"
+                         alt="Mount Everest climbers">
+                    <span class="success-story-year">1953</span>
+                </div>
+
+                <div class="success-story-content">
+                    <h3>First Successful Everest Ascent</h3>
+                    <h4>EDMUND HILLARY &amp; TENZING NORGAY</h4>
+
+                    <p>
+                        On 29 May 1953, Edmund Hillary and Tenzing Norgay
+                        became the first confirmed climbers to reach the
+                        summit of Mount Everest.
+                    </p>
+
+                    <a href="https://en.wikipedia.org/wiki/1953_British_Mount_Everest_expedition"
+                       target="_blank" rel="noopener noreferrer"
+                       class="success-story-btn">
+                        Read More <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="success-story-card">
+                <div class="success-story-image">
+                    <img src="myimg/nagaparbatachiv.jpg"
+                         alt="Snow-covered Nanga Parbat">
+                    <span class="success-story-year">1953</span>
+                </div>
+
+                <div class="success-story-content">
+                    <h3>Nanga Parbat Achievement</h3>
+                    <h4>HERMANN BUHL</h4>
+
+                    <p>
+                        Hermann Buhl made the first solo ascent of
+                        Nanga Parbat in 1953, achieving a remarkable
+                        milestone in mountaineering history.
+                    </p>
+
+                    <a href="https://en.wikipedia.org/wiki/Hermann_Buhl"
+                       target="_blank" rel="noopener noreferrer"
+                       class="success-story-btn">
+                        Read More <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="success-story-card">
+                <div class="success-story-image">
+                    <img src="myimg/6027f060d84a7.jpg"
+                         alt="Climbers on K2">
+                    <span class="success-story-year">2021</span>
+                </div>
+
+                <div class="success-story-content">
+                    <h3>First K2 Winter Summit</h3>
+                    <h4>NEPALI CLIMBERS</h4>
+
+                    <p>
+                        On 16 January 2021, a team of Nepali climbers
+                        achieved the first winter ascent of K2, one of
+                        the world's most challenging mountains.
+                    </p>
+
+                    <a href="https://en.wikipedia.org/wiki/K2"
+                       target="_blank" rel="noopener noreferrer"
+                       class="success-story-btn">
+                        Read More <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Success Stories Section End -->
+
+
+<!-- seltring -->
+<section class="mountaineering-shelter" id="Sheltering">
+
+
+    <h1>Mountaineering Sheltering</h1>
+
+    <p class="subtitle">
+        Explore different types of shelters used by mountaineers
+    </p>
+
+
+    <div class="container">
+
+        <div class="row g-4 justify-content-center">
+
+
+            <!-- Mountain Hut -->
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="shelter-card card-one">
+
+                    <div class="picture">
+                        <img src="myimg/images/hut.jpg" alt="Mountain Hut" height="200px" width="180">
+                    </div>
+
+                    <div class="icon">🏔️</div>
+
+                    <h2>Mountain Hut</h2>
+
+                    <p>
+                        Mountain huts are small buildings found in mountainous
+                        areas. They provide climbers with a safe place to rest,
+                        sleep and protect themselves from cold weather, rain
+                        and strong winds during their journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Base Camp -->
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="shelter-card card-two">
+
+                    <div class="picture">
+                        <img src="myimg/images/base.jpg" alt="Base Camp" height="200px" width="180">
+                    </div>
+
+                    <div class="icon">⛺</div>
+
+                    <h2>Base Camp</h2>
+
+                    <p>
+                        A base camp is an important resting area for
+                        mountaineers. Climbers use it to organize equipment,
+                        prepare for climbing and rest before continuing their
+                        journey to higher parts of the mountain.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Snow Shelter -->
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="shelter-card card-three">
+
+                    <div class="picture">
+                        <img src="myimg/images/snow.jpg" alt="Snow Shelter" height="200px" width="180">
+                    </div>
+
+                    <div class="icon">❄️</div>
+
+                    <h2>Snow Shelter</h2>
+
+                    <p>
+                        Snow shelters are temporary shelters made in snowy
+                        areas. They help protect mountaineers from freezing
+                        temperatures, strong winds and heavy snowfall when
+                        other shelters are not available.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Camping Shelter -->
+
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <div class="shelter-card card-four">
+
+                    <div class="picture">
+                        <img src="myimg/images/camping.jfif" alt="Camping Shelter" height="200px" width="180">
+                    </div>
+
+                    <div class="icon">🏕️</div>
+
+                    <h2>Camping Shelter</h2>
+
+                    <p>
+                        Camping shelters are lightweight shelters used during
+                        mountain trips and expeditions. They are easy to carry
+                        and provide protection from wind, rain and cold while
+                        climbers stay outdoors.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<div class="mountain-page" id="hazards">
+    <header>
+        <h1>Mountaineering Hazards</h1>
+        <p>Understanding the dangers of climbing mountains and how to stay safe.</p>
+    </header>
+
+    <main>
+
+        <section class="hazard">
+            <h2>1. Avalanches</h2>
+            <p>
+                Avalanches occur when large amounts of snow, ice, and rocks
+                suddenly slide down a mountain slope. They can move extremely
+                quickly and may bury climbers or block escape routes.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Check avalanche forecasts before climbing.</li>
+                <li>Avoid unstable snow-covered slopes.</li>
+                <li>Carry appropriate safety and rescue equipment.</li>
+            </ul>
+        </section>
+
+        <section class="hazard">
+            <h2>2. Extreme Weather</h2>
+            <p>
+                Mountain weather can change rapidly. Heavy snowfall, strong
+                winds, thunderstorms, and freezing temperatures can make
+                climbing extremely dangerous.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Check the weather forecast regularly.</li>
+                <li>Wear suitable waterproof and insulated clothing.</li>
+                <li>Turn back if weather conditions become dangerous.</li>
+            </ul>
+        </section>
+
+        <section class="hazard">
+            <h2>3. Altitude Sickness</h2>
+            <p>
+                Altitude sickness can occur when climbers ascend to high
+                elevations too quickly. Reduced oxygen levels can cause
+                headaches, dizziness, nausea, and tiredness.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Ascend gradually to allow your body to adjust.</li>
+                <li>Stay hydrated and get enough rest.</li>
+                <li>Descend immediately if serious symptoms develop.</li>
+            </ul>
+        </section>
+
+        <section class="hazard">
+            <h2>4. Rockfalls</h2>
+            <p>
+                Loose rocks can fall unexpectedly from steep mountain walls.
+                Rockfalls may be caused by weather, erosion, melting ice,
+                or movement from climbers.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Wear a climbing helmet.</li>
+                <li>Avoid climbing below unstable rock faces.</li>
+                <li>Keep a safe distance from other climbers.</li>
+            </ul>
+        </section>
+
+        <section class="hazard">
+            <h2>5. Hypothermia and Frostbite</h2>
+            <p>
+                Extremely cold temperatures can cause hypothermia and frostbite.
+                These conditions become more likely when climbers are exposed
+                to cold temperatures, wind, snow, or wet clothing for long periods.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Wear several layers of warm clothing.</li>
+                <li>Keep hands and feet dry and protected.</li>
+                <li>Carry emergency shelter and extra clothing.</li>
+            </ul>
+        </section>
+
+        <section class="hazard">
+            <h2>6. Falls and Slips</h2>
+            <p>
+                Falls are one of the most common dangers in mountaineering.
+                Steep slopes, loose rocks, ice, and slippery surfaces can cause
+                climbers to lose their balance.
+            </p>
+            <h3>Safety Tips</h3>
+            <ul>
+                <li>Use appropriate climbing equipment.</li>
+                <li>Move carefully on steep or icy terrain.</li>
+                <li>Use ropes and other protection when necessary.</li>
+            </ul>
+        </section>
+
+    </main>
+<div class="last">
+    
+        <p>Stay prepared. Stay alert. Climb safely.</p>
+   </div>
+</div>
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section class="contact-page-section" id="contactus">
+
+    <div class="contact-page-hero">
+        <div>
+            <h2>Contact Us</h2>
+            <p>
+                Have a question about the mountains?
+                We would love to hear from you.
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-page-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-info-card">
+
+            <h2>Let's Talk</h2>
+
+            <p>
+                Whether you want to learn more about K2, explore famous
+                mountains, or share your mountain experience, send us a message.
+            </p>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">📍</div>
+
+                <div>
+                    <h4>Location</h4>
+                    <span>Pakistan, Karakoram</span>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">📧</div>
+
+                <div>
+                    <h4>Email</h4>
+                    <span>info@mountainexplorer.com</span>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">📞</div>
+
+                <div>
+                    <h4>Phone</h4>
+                    <span>+92 300 1234567</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-form-card">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+
+                <div class="contact-input-group">
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name">
+
+                    <span class="contact-error" id="nameError"></span>
+                </div>
+
+
+                <div class="contact-input-group">
+                    <label>Email Address</label>
+
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <span class="contact-error" id="emailError"></span>
+                </div>
+
+
+                <div class="contact-input-group">
+                    <label>Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Enter subject">
+
+                    <span class="contact-error" id="subjectError"></span>
+                </div>
+
+
+                <div class="contact-input-group">
+                    <label>Message</label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Write your message..."></textarea>
+
+                    <span class="contact-error" id="messageError"></span>
+                </div>
+
+
+                <button type="submit" class="contact-submit-btn">
+                    Send Message
+                </button>
+
+                <div id="successMessage" class="contact-success">
+                    ✓ Your message has been submitted successfully!
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- history section -->
+    
+<div class="history" id="historymy">
+
+<div class="main-heading">
+
+    <h1>Mountaineering History</h1>
+
+    <p>Explore the journey of mountaineering through history</p>
+
+</div>
+
+
+<!-- CARDS -->
+
+<div class="cards">
+
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <div class="image">
+            <img src="myimg/early.jfif" alt="Early Mountaineering">
+        </div>
+
+        <div class="content">
+
+            <h2>Early Mountaineering</h2>
+
+            <p>
+                Early mountaineering began with explorers
+                traveling through mountains and discovering
+                new routes.
+            </p>
+
+            <button onclick="openHistory3D('history-1')">
+    View History
+</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <div class="image">
+            <img src="myimg/golden.jfif" alt="Golden Age">
+        </div>
+
+        <div class="content">
+
+            <h2>Golden Age</h2>
+
+            <p>
+                During the 19th century, climbing became
+                popular and many important mountain routes
+                were explored.
+            </p>
+<button onclick="openHistory3D('history-2')">
+    View History
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <div class="image">
+            <img src="myimg/evarest.jfif" alt="Mount Everest">
+        </div>
+
+        <div class="content">
+
+            <h2>Mount Everest</h2>
+
+            <p>
+                Mount Everest became one of the biggest
+                goals for mountaineers around the world.
+            </p>
+<button onclick="openHistory3D('history-3')">
+    View History
+</button>
+        </div>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <div class="image">
+            <img src="myimg/modern.jfif" alt="Modern Mountaineering">
+        </div>
+
+        <div class="content">
+
+            <h2>Modern Mountaineering</h2>
+
+            <p>
+                Today, climbers use modern equipment,
+                technology and improved climbing methods.
+            </p>
+<button onclick="openHistory3D('history-4')">
+    View History
+</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD 5 -->
+
+    <div class="card">
+
+        <div class="image">
+            <img src="myimg/k2.jfif" alt="K2 Expeditions">
+        </div>
+
+        <div class="content">
+
+            <h2>K2 Expeditions</h2>
+
+            <p>
+                K2 is one of the world's most challenging
+                mountains and has a long climbing history.
+            </p>
+<button onclick="openHistory3D('history-5')">
+    View History
+</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+<!-- history section end -->
+<!-- ========== 3D HISTORY CARD VIEWER ========== -->
+<div class="history3d-overlay" id="history3dOverlay">
+
+    <div class="history3d-scene">
+
+        <button class="history3d-close"
+                onclick="closeHistory3D()"
+                aria-label="Close history card">
+            &times;
+        </button>
+
+        <div class="history3d-card" id="history3dCard">
+
+            <!-- FRONT SIDE -->
+            <div class="history3d-face history3d-front">
+                <img id="history3dImage"
+                     src="myimg/image.png"
+                     alt="Mountaineering history">
+
+                <div class="history3d-front-content">
+                    <span class="history3d-label">MOUNTAINEERING HISTORY</span>
+                    <h2 id="history3dTitle">History Title</h2>
+
+                    <button class="history3d-view-btn"
+                            onclick="flipHistory3D()">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- BACK SIDE -->
+            <div class="history3d-face history3d-back">
+                <span class="history3d-label">EXPLORE THE PAST</span>
+                <h2 id="history3dBackTitle">History Title</h2>
+
+                <p id="history3dDescription">
+                    Discover the history of mountaineering.
+                </p>
+
+                <button class="history3d-back-btn"
+                        onclick="flipHistory3D()">
+                    Back to Image
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ========== END 3D HISTORY CARD VIEWER ========== -->
+
+
+<!-- galary -->
+
+<section class="mountaineering-gallery" id="Gallery">
+
+    <div class="gallery-heading">
+        <h1>Mountaineering Gallery</h1>
+        <p>Explore the beauty and adventure of the mountains</p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="myimg/mountyeverst1.jpg" alt="Mount Everest">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/k2mountainme.jpg" alt="K2 Mountain">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/himalianme.jpg" alt="Himalayan Mountains">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/mountainclimingsme.jpg" alt="Mountain Climber">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/base.jpg" alt="Mountain Base Camp">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/snow climgme.jpg" alt="Snow Climbing">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.webp" alt="Mountain Landscape">
+        </div>
+
+        <div class="gallery-item">
+            <img src="myimg/images/equipmentsme.jpg" alt="Mountaineering Equipment">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MOUNTAINEERING RECORDS ================= -->
+
+<div class="mr-records-page" id="mountaineering-records">
+
+    <!-- HERO SECTION -->
+    <header class="mr-records-hero">
+        <div class="container text-center">
+            <p class="mr-hero-tagline">
+                LEGENDARY ACHIEVEMENTS • EXTRAORDINARY PEOPLE • LIMITLESS POSSIBILITIES
+            </p>
+
+            <h1>Mountaineering <span>Records</span></h1>
+
+            <p class="mr-hero-description">
+                Explore the most remarkable achievements in mountaineering history,
+                from record-breaking ascents to extraordinary feats of courage and endurance.
+            </p>
+        </div>
+    </header>
+
+    <!-- RECORD CATEGORIES -->
+    <section class="mr-category-section">
+        <div class="container-fluid">
+            <div class="row g-3">
+
+                <div class="col-6 col-lg">
+                    <a href="#mr-highest" class="mr-category-item">
+                        <div class="mr-category-icon">
+                            <i class="bi bi-triangle"></i>
+                        </div>
+                        <div>
+                            <h6>Highest Peaks</h6>
+                            <small>Summits & First Ascents</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg">
+                    <a href="#mr-fastest" class="mr-category-item">
+                        <div class="mr-category-icon">
+                            <i class="bi bi-stopwatch"></i>
+                        </div>
+                        <div>
+                            <h6>Fastest Climbs</h6>
+                            <small>Speed Records</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg">
+                    <a href="#mr-youngest" class="mr-category-item">
+                        <div class="mr-category-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div>
+                            <h6>Youngest & Oldest</h6>
+                            <small>Age Records</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg">
+                    <a href="#mr-facts" class="mr-category-item">
+                        <div class="mr-category-icon">
+                            <i class="bi bi-compass"></i>
+                        </div>
+                        <div>
+                            <h6>Expeditions</h6>
+                            <small>Adventure Records</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg">
+                    <a href="#mr-facts" class="mr-category-item">
+                        <div class="mr-category-icon">
+                            <i class="bi bi-flag"></i>
+                        </div>
+                        <div>
+                            <h6>Most Summits</h6>
+                            <small>Multiple Ascents</small>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED RECORDS -->
+    <section class="mr-records-section" id="mr-highest">
+
+        <h2 class="mr-section-title">
+            <span></span> FEATURED RECORDS
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- RECORD 1 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="mr-record-card">
+
+                    <div class="mr-record-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85"
+                             alt="Snow covered mountain peaks">
+                        <span class="mr-record-badge">8848.86 m</span>
+                    </div>
+
+                    <div class="mr-record-body">
+                        <h3>Highest Mountain Summit</h3>
+                        <h4><i class="bi bi-triangle"></i> Mount Everest</h4>
+
+                        <p>
+                            Mount Everest is Earth's highest mountain above sea level,
+                            reaching approximately 8,848.86 meters.
+                        </p>
+
+                        <span class="mr-record-date">
+                            <i class="bi bi-calendar-event"></i> First Ascent: 1953
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RECORD 2 -->
+            <div class="col-12 col-md-6 col-xl-3" id="mr-fastest">
+                <div class="mr-record-card">
+
+                    <div class="mr-record-image">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=85"
+                             alt="Mountaineer climbing a mountain">
+                        <span class="mr-record-badge">5h 56m</span>
+                    </div>
+
+                    <div class="mr-record-body">
+                        <h3>Fastest Ascent (Everest)</h3>
+                        <h4><i class="bi bi-stopwatch"></i> Speed Records</h4>
+
+                        <p>
+                            Everest speed records depend on the route, starting point,
+                            oxygen use and the method used to measure ascent time.
+                        </p>
+
+                        <span class="mr-record-date">
+                            <i class="bi bi-calendar-event"></i>Fastest record
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RECORD 3 -->
+            <div class="col-12 col-md-6 col-xl-3" id="mr-youngest">
+                <div class="mr-record-card">
+
+                    <div class="mr-record-image">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=85"
+                             alt="Snow covered mountain">
+                        <span class="mr-record-badge">13 years</span>
+                    </div>
+
+                    <div class="mr-record-body">
+                        <h3>Youngest Everest Summiteer</h3>
+                        <h4><i class="bi bi-person"></i> Jordan Romero</h4>
+
+                        <p>
+                            Jordan Romero reached Mount Everest's summit in 2010
+                            at the age of 13.
+                        </p>
+
+                        <span class="mr-record-date">
+                            <i class="bi bi-calendar-event"></i> Year: 2010
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RECORD 4 -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="mr-record-card">
+
+                    <div class="mr-record-image">
+                        <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=800&q=85"
+                             alt="Mountain expedition">
+                        <span class="mr-record-badge">80 years</span>
+                    </div>
+
+                    <div class="mr-record-body">
+                        <h3>Oldest Everest Summiteer</h3>
+                        <h4><i class="bi bi-person"></i> Yuichiro Miura</h4>
+
+                        <p>
+                            Yuichiro Miura reached the summit of Everest in 2013
+                            at the age of 80.
+                        </p>
+
+                        <span class="mr-record-date">
+                            <i class="bi bi-calendar-event"></i> Year: 2013
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="mr-facts-section" id="mr-facts">
+
+        <div class="row g-4 align-items-center">
+
+            <div class="col-12 col-lg-3">
+                <p class="mr-facts-label">— QUICK FACTS</p>
+
+                <h2 class="mr-facts-heading">
+                    Mountaineering
+                    <span>By The Numbers</span>
+                </h2>
+
+                <p>
+                    These incredible records show the courage, determination
+                    and skill of mountaineers around the world.
+                </p>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="mr-facts-list">
+
+                    <div class="mr-fact-item">
+                        <div class="mr-fact-icon">
+                            <i class="bi bi-triangle"></i>
+                        </div>
+                        <div>
+                            <h4>14</h4>
+                            <p>Peaks above 8,000 meters</p>
+                        </div>
+                    </div>
+
+                    <div class="mr-fact-item">
+                        <div class="mr-fact-icon">
+                            <i class="bi bi-flag"></i>
+                        </div>
+                        <div>
+                            <h4>7</h4>
+                            <p>Continents with major peaks</p>
+                        </div>
+                    </div>
+
+                    <div class="mr-fact-item">
+                        <div class="mr-fact-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div>
+                            <h4>100+</h4>
+                            <p>Years of recorded Everest ascents</p>
+                        </div>
+                    </div>
+
+                    <div class="mr-fact-item">
+                        <div class="mr-fact-icon">
+                            <i class="bi bi-compass"></i>
+                        </div>
+                        <div>
+                            <h4>Thousands</h4>
+                            <p>Of climbers attempt Everest each year</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="mr-quote-section">
+                    <div class="mr-quote-content">
+                        <div class="mr-quote-mark">“</div>
+
+                        <blockquote>
+                            Records are not just numbers, they are stories of
+                            human courage, perseverance and the unbreakable
+                            spirit of adventure.
+                        </blockquote>
+
+                        <p>— Mountaineering Community</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DECORATIVE BOTTOM -->
+    <div class="mr-records-bottom">
+        <span></span>
+        <i class="bi bi-mountain"></i>
+        <span></span>
+    </div>
+
+</div>
+
+<!-- =============== END MOUNTAINEERING RECORDS =============== -->
+
+
+<!-- about us section -->
+ <section class="about-hero" id="about">
+
+    <div class="about-hero-content">
+
+        <span>ABOUT ALPINE ADVENTURES</span>
+
+        <h1>
+            Explore Beyond
+            <br>
+            The Ordinary
+        </h1>
+
+        <p>
+            We are passionate about mountains, exploration and
+            unforgettable adventures. Our journey takes you closer
+            to the world's most incredible peaks.
+        </p>
+
+    </div>
+
+
+    <!-- RIGHT SIDE IMAGE -->
+
+    <div class="about-hero-image">
+
+        <img src="myimg/hero.webp" alt="Mountain Adventure">
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         WHO WE ARE
+    ========================== -->
+
+    <section class="who-we-are">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- IMAGE -->
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+
+                        <img src="myimg/aboutus.jpg"
+                            alt="Mountain Adventure">
+
+                    </div>
+
+                </div>
+
+
+                <!-- TEXT -->
+
+                <div class="col-lg-6">
+
+                    <div class="about-text">
+
+                        <span class="small-title">
+                            WHO WE ARE
+                        </span>
+
+                        <h2>
+                            Born From A Love
+                            Of The Mountains
+                        </h2>
+
+                        <p>
+                            Alpine Adventures is a mountaineering and
+                            exploration website created for people who
+                            love mountains and adventure.
+                        </p>
+
+                        <p>
+                            From the world's highest peaks to breathtaking
+                            mountain landscapes, we bring together information
+                            about climbing, expeditions and incredible
+                            destinations.
+                        </p>
+
+                        <a href="#organizations-clubs" class="about-btn">
+                            Explore Expeditions
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OUR MOUNTAINS
+    ========================== -->
+
+    <section class="our-mountains">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>ICONIC PEAKS</span>
+
+                <h2>
+                    Our Mountains
+                </h2>
+
+                <p>
+                    Explore some of the world's most famous
+                    and breathtaking mountains.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- EVEREST -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="mountain-card">
+
+                        <img src="myimg/mountyeverst1.jpg"
+                            alt="Mount Everest">
+
+                        <div class="mountain-content">
+
+                            <span>01 / MOUNTAIN</span>
+
+                            <h3>
+                                Mount Everest
+                            </h3>
+
+                            <p>
+                                One of the world's most iconic
+                                mountain peaks.
+                            </p>
+<button class="your-existing-button-class"
+        onclick="openOurMountainPopup('everest')">
+    Read More
+</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- K2 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="mountain-card">
+
+                        <img src="myimg/k2.jpg"
+                            alt="K2 Mountain">
+
+                        <div class="mountain-content">
+
+                            <span>02 / MOUNTAIN</span>
+
+                            <h3>
+                                K2
+                            </h3>
+
+                            <p>
+                                A dramatic peak rising through
+                                the Karakoram.
+                            </p>
+
+<button class="your-existing-button-class"
+        onclick="openOurMountainPopup('k2')">
+    Read More
+</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NANGA PARBAT -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="mountain-card">
+
+                        <img src="myimg/nagaone.jpg"
+                            alt="Nanga Parbat">
+
+                        <div class="mountain-content">
+
+                            <span>03 / MOUNTAIN</span>
+
+                            <h3>
+                                Nanga Parbat
+                            </h3>
+
+                            <p>
+                                A magnificent Himalayan peak
+                                surrounded by breathtaking scenery.
+                            </p>
+<button class="your-existing-button-class"
+        onclick="openOurMountainPopup('nanga')">
+    Read More
+</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY EXPLORE WITH US
+    ========================== -->
+
+    <section class="why-us">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>WHY EXPLORE WITH US</span>
+
+                <h2>
+                    The Spirit Of Adventure
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="why-box">
+                        <h3>01</h3>
+                        <h4>Beautiful Destinations</h4>
+                        <p>
+                            Discover incredible mountain locations.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="why-box">
+                        <h3>02</h3>
+                        <h4>Mountain Stories</h4>
+                        <p>
+                            Learn about iconic peaks and expeditions.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="why-box">
+                        <h3>03</h3>
+                        <h4>Adventure</h4>
+                        <p>
+                            Experience the excitement of exploration.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="why-box">
+                        <h3>04</h3>
+                        <h4>Inspiration</h4>
+                        <p>
+                            Find inspiration for your next adventure.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- OUR MOUNTAINS POPUP -->
+<div class="our-mountain-popup" id="ourMountainPopup">
+
+    <div class="our-mountain-popup-box">
+
+        <button class="our-mountain-close"
+                onclick="closeOurMountainPopup()">
+            &times;
+        </button>
+
+        <div class="our-mountain-popup-image">
+            <img id="ourMountainImage"
+                 src="myimg/Climbers-side-Nepali-Mount-Everest.webp"
+                 alt="Mountain">
+        </div>
+
+        <div class="our-mountain-popup-content">
+
+            <span class="our-mountain-label">
+                EXPLORE THE MOUNTAINS
+            </span>
+
+            <h2 id="ourMountainTitle">Mount Everest</h2>
+
+            <p id="ourMountainDescription">
+                Discover the world's magnificent mountains.
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= LOCATION SECTION ================= -->
+
+<section class="mloc-location-section" id="location">
+
+    <div class="mloc-location-overlay">
+
+        <!-- Section Heading -->
+        <div class="mloc-location-heading">
+            <span class="mloc-location-subtitle">
+                OUR LOCATION
+            </span>
+
+            <h2>Find Us In The Mountains</h2>
+
+            <p>
+                Connect with us and start planning your next
+                mountain adventure.
+            </p>
+        </div>
+
+        <!-- Location Content -->
+        <div class="mloc-location-container">
+
+            <!-- Contact Information -->
+            <div class="mloc-contact-info">
+
+                <div class="mloc-contact-item">
+                    <div class="mloc-contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="mloc-contact-details">
+                        <h3>Our Address</h3>
+                        <p>
+                            Hunza Valley,<br>
+                            Gilgit-Baltistan, Pakistan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mloc-contact-item">
+                    <div class="mloc-contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="mloc-contact-details">
+                        <h3>Phone Number</h3>
+                        <p>+92 345 6789012</p>
+                    </div>
+                </div>
+
+                <div class="mloc-contact-item">
+                    <div class="mloc-contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="mloc-contact-details">
+                        <h3>Email Address</h3>
+                        <p>info@alpineascents.pk</p>
+                    </div>
+                </div>
+
+                <div class="mloc-contact-social">
+                    <h3>Follow Our Adventures</h3>
+
+                    <div class="mloc-social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Map -->
+            <div class="mloc-map-wrapper">
+
+                <iframe
+                    class="mloc-location-map"
+                    src="https://maps.google.com/maps?q=Hunza%20Valley%2C%20Pakistan&output=embed"
+                    title="Map showing Hunza Valley, Pakistan"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+        <!-- Directions Button -->
+        <div class="mloc-directions-wrapper">
+
+            <a
+                class="mloc-directions-btn"
+                href="https://www.google.com/maps/dir/?api=1&destination=Hunza%20Valley%2C%20Pakistan"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+                GET DIRECTIONS
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+        <div class="mloc-mountain-divider"></div>
+
+    </div>
+
+</section>
+
+<!-- =============== END LOCATION SECTION =============== -->
+
+    
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="records-footer">
+    <div class="footer-line"></div>
+    <i class="bi bi-mountains"></i>
+    <div class="footer-line"></div>
+</footer>
+
+<!-- =========================
+     ALPINE ASCENTS FOOTER
+========================= -->
+
+<footer class="alpine-footer" id="footer">
+
+    <div class="alpine-footer-container">
+
+        <!-- Logo and About -->
+        <div class="alpine-footer-about">
+
+            <a href="#home" class="alpine-footer-brand">
+                <img src="myimg/logo_mountain-removebg-preview.png"
+                     alt="Alpine Ascents Logo">
+
+                <span>
+                    ALPINE <strong>ASCENTS</strong>
+                    <small>INTERNATIONAL</small>
+                </span>
+            </a>
+
+            <p>
+                Inspiring adventure. Building stronger minds.
+                Exploring higher.
+            </p>
+
+            <p>
+                Discover the spirit of mountaineering and explore
+                the world's breathtaking mountains with us.
+            </p>
+
+<div class="alpine-footer-social">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <!-- X -->
+    <a href="https://x.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+</div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="alpine-footer-links">
+
+            <h3>QUICK LINKS</h3>
+
+            <a href="#home">Home</a>
+            <a href="#historymy">History</a>
+            <a href="#mountain-types">Types / Styles</a>
+            <a href="#techniques">Techniques</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#about">About Us</a>
+            <a href="#contactus">Contact</a>
+
+        </div>
+
+        <!-- Explore -->
+        <div class="alpine-footer-links">
+
+            <h3>EXPLORE</h3>
+
+            <a href="#organizations-clubs">
+                Organizations &amp; Clubs
+            </a>
+
+            <a href="#success-stories">Success Stories</a>
+            <a href="#Sheltering">Sheltering</a>
+            <a href="#hazards">Mountaineering Hazards</a>
+
+            <a href="#mountaineeringModal"
+               data-bs-toggle="modal"
+               data-bs-target="#mountaineeringModal">
+                Explore Mountaineering
+            </a>
+
+            <a href="#expeditionsModal"
+               data-bs-toggle="modal"
+               data-bs-target="#expeditionsModal">
+                Discover Expeditions
+            </a>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="alpine-footer-contact">
+
+            <h3>CONTACT US</h3>
+
+            <p>
+                <span>📍</span>
+                Pakistan, Karakoram
+            </p>
+
+            <p>
+                <span>✉</span>
+                <a href="mailto:info@mountainexplorer.com">
+                    info@mountainexplorer.com
+                </a>
+            </p>
+
+            <p>
+                <span>☎</span>
+                <a href="tel:+923001234567">
+                    +92 300 1234567
+                </a>
+            </p>
+
+            <div class="alpine-footer-tagline">
+                <span>⛰</span>
+                <p>
+                    Higher Goals.<br>
+                    Bigger Adventures.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="alpine-footer-bottom">
+
+        <p>
+            © 2026 Alpine Ascents International.
+            All rights reserved.
+        </p>
+
+        <a href="#home">Back to Top ↑</a>
+
+    </div>
+
+</footer>
+
+<!-- END ALPINE ASCENTS FOOTER -->
+
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="file.js"></script>
+
+
+
+</body>
+</html>
